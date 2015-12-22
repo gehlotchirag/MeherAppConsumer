@@ -3,7 +3,7 @@
  */
 angular.module('starter.controllers')
 
-    .controller('orderCtrl', function ($scope, $http, $stateParams, CartData, StoreData, $ionicPopup, $timeout, $cordovaSms, $location, $window, $cordovaSQLite, $rootScope, $ionicPlatform) {
+    .controller('orderCtrl', function ($scope, $http, $stateParams, CartData, StoreData, $ionicPopup, $timeout, $location, $window, $cordovaSQLite, $rootScope, $ionicPlatform) {
         //$scope.cartList=CartData.getCart();
         $scope.cartMsg = "";
         $scope.cartItems = CartData.getCart();
@@ -13,35 +13,32 @@ angular.module('starter.controllers')
         $scope.formData.userSublocality = $window.subLocality.formatted_address;
         $scope.orderPost = {};
         $scope.showDelete = false;
-        $scope.addnotAvailble = false;
-        window.localStorage['MeherUser'];
-        window.localStorage['MeherMobile'];
-        window.localStorage['MeherMobile'] = null;
-        var db;
+      $scope.saveToDb = false;
+      var originalAddress;
 
-        $ionicPlatform.ready(function () {
-            db = $cordovaSQLite.openDB("my.db");
-            var query = "CREATE TABLE IF NOT EXISTS Meher_user (deviceID text, mobile integer,type text,addLine1 text,addLine2 text)";
-            $cordovaSQLite.execute(db, query).then(function (res) {
-                $scope.checkLocalDB();
-            }, function (err) {
-            });
+
+      $scope.lookupLocalDB = function() {
+        var query = "SELECT * FROM Meher_user WHERE addLine2 = ? ";
+        $cordovaSQLite.execute(db, query,[$scope.formData.userSublocality]).then(function (result) {
+          if(result.rows.length > 0) {
+            window.localStorage['MeherUser'] = JSON.stringify(result.rows.item(0));
+            window.localStorage['MeherMobile'] = JSON.stringify(result.rows.item(0).mobile);
+            $scope.formData.userAddress = result.rows.item(0).addLine1;
+            originalAddress = result.rows.item(0).addLine1;
+          } else {
+            $scope.saveToDb = true;
+          }
+        }, function(error) {
+          console.error(error);
         });
+      };
 
-        $scope.checkLocalDB = function () {
-            if (JSON.parse(window.localStorage['MeherUser']))
-                alert("before checking go user" + window.localStorage['MeherUser']);
-            var query = "SELECT * FROM Meher_user WHERE addLine2 = ?";
-            $cordovaSQLite.execute(db, query, $scope.formData.userSublocality).then(function (result) {
-                if (result.rows.length > 0) {
-                    window.localStorage['MeherUser'] = JSON.stringify(result.rows.item(0));
-                    window.localStorage['MeherMobile'] = JSON.stringify(result.rows.item(0).mobile);
-                    $scope.formData.userAddress = JSON.stringify(result.rows.item(0).addLine1);
-                }
-            }, function (error) {
-                console.error(error);
-            });
-        };
+      $ionicPlatform.ready(function() {
+        //alert(JSON.stringify(window.localStorage['MeherUser']));
+        //if (typeof window.localStorage['MeherUser'] == "undefined") {
+        $scope.lookupLocalDB();
+          //$scope.checkLocalDB ();
+      });
 
 
         $scope.$on("$ionicView.enter", function () {
@@ -147,52 +144,63 @@ angular.module('starter.controllers')
             });
         };
 
+      $scope.insertDB = function() {
+        var user = {};
+        angular.copy($scope.orderPost.customer, user);
+
+        var query = "INSERT INTO Meher_user (deviceID , mobile ,addLine1 ,addLine2 ) VALUES (?,?,?,?)";
+        $cordovaSQLite.execute(db, query, [window.localStorage['MeherDeviceId'],window.localStorage['MeherMobile'],$scope.formData.userAddress, $scope.formData.userSublocality]).then(function(res) {
+          console.log("INSERT ID -> " + res.insertId);
+        }, function (err) {
+          console.error(err);
+        });
+      };
+
+      $scope.updateDB = function () {
+          var query = "UPDATE Meher_user SET addLine1 = ? WHERE addLine2 = ?;";
+          $cordovaSQLite.execute(db, query,[$scope.formData.userAddress,$scope.formData.userSublocality]);
+        };
+
         $scope.retriveLocal = function () {
-            if ($scope.formData.userAddress) {
-                $scope.makeOrder();
-                //if (!angular.isObject(window.localStorage['MeherMobile'])){
-                ////if (window.localStorage['MeherMobile'] !== null || window.localStorage['MeherMobile'] !==undefined){
-                //	alert("gottach here" + window.localStorage['MeherMobile']);
-                //	//$scope.makeUser();
-                //}
-                if (true) {
-                    var query = "SELECT * FROM Meher_user WHERE deviceId = ?";
-                    $cordovaSQLite.execute(db, query, [window.localStorage['MeherDeviceId']]).then(function (result) {
-                        if (result.rows.length > 0) {
-                            window.localStorage['MeherUser'] = JSON.stringify(result.rows.item(0));
-                            window.localStorage['MeherMobile'] = JSON.stringify(result.rows.item(0).mobile);
-                            //window.meherLoggedin = true;
-                            //$scope.makeOrder();
-                        } else {
-                            $scope.saveOrdergotoLogin();
-                            //window.localStorage['orderPost'] = $scope.orderPost;
-                            //window.localStorage['currentOrder'] = $scope.cartMsg;
-                            //alert(window.localStorage['currentOrder']);
-                            //alert(window.localStorage['orderPost']);
-                            //
-                            //console.log(window.localStorage['currentOrder']);
-                            //console.log(window.localStorage['orderPost']);
-                            //console.log(window.localStorage['meherUserMobile']);
-                            //
-                            ////window.meherLoggedin = false;
-                            //alert("new user going to login");
-                            //$location.url("/app/login");
-                            ////alert("NO ROWS EXIST");
-                        }
-                    }, function (error) {
-                        console.error(error);
-                    });
+
+          if (!$scope.formData.userAddress) {
+            $scope.showAlert();
+          }
+          else{
+            if (originalAddress !== $scope.formData.userAddress)
+            {
+              if ($scope.saveToDb ==true)
+                $scope.insertDB();
+              else
+              $scope.updateDB();
+            }
+            $scope.makeOrder();
+            if(window.localStorage.getItem("MeherUser") !== undefined && window.localStorage.getItem("MeherMobile") !== undefined && window.localStorage.getItem("MeherMobile") !== null && window.localStorage.getItem("MeherMobile") !== "null" && window.localStorage.getItem("MeherMobile") !== "undefined" ){
+              $scope.makeUser();
+            }
+            else{
+              var query = "SELECT * FROM Meher_user WHERE deviceId = ?";
+              $cordovaSQLite.execute(db, query, [window.localStorage['MeherDeviceId']]).then(function (result) {
+                if (result.rows.length > 0) {
+                  window.localStorage['MeherUser'] = JSON.stringify(result.rows.item(0));
+                  window.localStorage['MeherMobile'] = JSON.stringify(result.rows.item(0).mobile);
+                  if(window.localStorage.getItem("MeherUser") !== undefined && window.localStorage.getItem("MeherMobile") !== undefined && window.localStorage.getItem("MeherMobile") !== null && window.localStorage.getItem("MeherMobile") !== "null" && window.localStorage.getItem("MeherMobile") !== "undefined" ){
+                    $scope.makeUser();
+                  }
+                  else {
+                    $scope.saveOrdergotoLogin();
+                  }
+                  //$scope.makeUser();
+                } else {
+                  $scope.saveOrdergotoLogin();
                 }
+              }, function (error) {
+                console.error(error);
+              });
             }
-            else {
-                $scope.showAlert();
-            }
+          }
         };
 
-
-        $scope.saveLocally = function () {
-            //alert("saving");
-        };
 
         $scope.saveOrdergotoLogin = function () {
             window.localStorage['orderPost'] = JSON.stringify($scope.orderPost);
@@ -200,48 +208,31 @@ angular.module('starter.controllers')
             $location.url("/app/login");
         };
 
-        $scope.makeUser = function () {
-            //alert("saving");
-            //retrive local data
-
-            $scope.orderPost.customer.mobile = window.localStorage['MeherMobile'];
-            console.log("******");
-            console.log($scope.orderPost);
-
-            $http({
-                url: 'http://getmeher.com:3000/orders',
-                method: "POST",
-                data: $scope.orderPost
-            }).then(function (response) {
-                    // success
-                    alert("orderSentToServe");
-                    console.log(response);
-                },
-                function (response) { // optional
-                    // failed
-                    console.log(response);
-                });
-
-            $scope.cartMsg = $scope.cartMsg + '\n' + "Ordered Using Meher App - https://goo.gl/cxqKEc";
-            console.log($scope.cartMsg);
-
-            document.addEventListener("deviceready", function () {
-                $cordovaSms
-                    .send($scope.StoreSelected.mobile, $scope.cartMsg, options)
-                    .then(function () {
-                        //alert('Sending Order');
-                        // Success! SMS was sent
-                        $location.url("/app/postorder");
-                    }, function (error) {
-                        alert(error);
-                        // An error occurred
-
-                    });
+      $scope.makeUser = function () {
+        $scope.orderPost["customer"]["mobile"] = window.localStorage['MeherMobile'];
+        $http({
+          url: 'http://getmeher.com:3000/orders',
+          method: "POST",
+          data: $scope.orderPost
+        }).then(function (response) {
+              // success
+              //alert("orderSentToServe");
+              console.log(response);
+              CartData.emptyCart();
+              $location.url("/app/postorder");
+            },
+            function (response) { // optional
+              // failed
+              alert(JSON.stringify(response));
+              console.log(response);
             });
-        };
+        $scope.cartMsg = $scope.cartMsg + '\n' + "Ordered Using Meher App - https://goo.gl/cxqKEc";
+        console.log($scope.cartMsg);
+      };
 
 
-        $scope.makeOrder = function () {
+
+      $scope.makeOrder = function () {
             console.log($scope.formData.userAddress);
             $scope.cartMsg = "";
             //$scope.saveLocally()

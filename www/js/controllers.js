@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-    .controller('LoadCtrl', function($scope, $cordovaPush, $cordovaDialogs, $cordovaMedia, $cordovaToast, ionPlatform, $http,CartData,$location,$cordovaDevice,$state,$rootScope) {
+    .controller('LoadCtrl', function($scope, $cordovaPush, $cordovaDialogs, $cordovaMedia, $cordovaToast, ionPlatform, $http,CartData,$location,$cordovaDevice,$state,$rootScope,$cordovaSocialSharing) {
       $scope.notifications = [];
       $scope.cartList=CartData.getCart();
       $scope.grandTotal;
@@ -16,6 +16,20 @@ angular.module('starter.controllers', [])
           $scope.requestDelete = !$scope.requestDelete;
         $rootScope.$emit("CallDelete", {});
       }
+
+      $scope.whatsappShare=function(){
+        var msg="Recommending the awesome Meher app to you. Get groceries, fruits, veggies & more from nearby stores instantly. Download it now";
+
+        $cordovaSocialSharing
+            .shareViaWhatsApp(msg , null, 'https://goo.gl/cxqKEc')
+            .then(function(result) {
+              // Success!
+            }, function(err) {
+              // An error occurred. Show a message to the user
+              alert("Falied")
+            });
+      }
+
 
       $scope.$on('$locationChangeSuccess', function(event) {
         console.log($location.path())
@@ -165,12 +179,12 @@ angular.module('starter.controllers', [])
           $http.post('http://getmeher.com:8000/subscribe', JSON.stringify(user))
               .success(function (data, status) {
                 //alert("yes done" + data)
-                console.log("Token stored, device is successfully subscribed to receive push notifications.");
+                //alert("Token stored, device is successfully subscribed to receive push notifications.");
                 //alert("Token stored, device is successfully subscribed to receive push notifications.");
               })
               .error(function (data, status) {
-                //alert("no not done")
-                console.log("Error storing device token." + data + " " + status)
+                ////alert("no not done")
+                //alert("Error storing device token." + data + " " + status)
                 //alert("Error storing device token." + data + " " + status)
               }
           );

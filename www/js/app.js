@@ -5,9 +5,12 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','greatCircles','ion-google-place'])
+var db = null;
+var MeherUser ={};
+var MeherMobile = null;
+var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','greatCircles','ion-google-place', 'ionic-pullup','ion-sticky','jett.ionic.filter.bar'])
 
-    .run(function($ionicPlatform,$state) {
+    .run(function($ionicPlatform,$state,$cordovaSQLite) {
       $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -19,18 +22,27 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
           StatusBar.styleDefault();
         }
         document.addEventListener("resume", function() {
-          if($state.current.name == "app.storelist")
+          if($state.current.name == "app.storelist" || $state.current.name == "app.postorder")
           {
             $state.go($state.current, {}, {reload: true});
           }
 
         }, false);
+        db = $cordovaSQLite.openDB("meheruserc.db");
+        $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS Meher_user (deviceId text, mobile integer,addLine1 text,addLine2 text)");
       });
     })
 
 
-    .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider) {
+    .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$ionicFilterBarConfigProvider) {
       $ionicConfigProvider.views.forwardCache(true);
+      //$ionicFilterBarConfigProvider.theme('stable');
+      $ionicFilterBarConfigProvider.clear('ion-close');
+      $ionicFilterBarConfigProvider.search('ion-search');
+      $ionicFilterBarConfigProvider.backdrop(false);
+      $ionicFilterBarConfigProvider.transition('vertical');
+      $ionicFilterBarConfigProvider.placeholder('Search Products');
+
       $stateProvider
 
           .state('app', {
@@ -42,6 +54,7 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
 
           .state('app.postorder', {
             url: '/postorder',
+            cache: false,
             views: {
               'menuContent': {
                 templateUrl: 'templates/post-order.html',
@@ -152,6 +165,8 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
 
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('/app/categories');
+      //$urlRouterProvider.otherwise('/app/categories/Grocery/Swastik Super Market');
+      //$urlRouterProvider.otherwise('/app/categories');
       //$urlRouterProvider.otherwise('/app/login');
     });
 

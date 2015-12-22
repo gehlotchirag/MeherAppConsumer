@@ -18,7 +18,7 @@
       <!--</ion-nav-buttons>-->
 
       <ion-nav-buttons side="right">
-        <a ng-if="currentPage == '/categories'" class="button icon-right ion-speakerphone button-balanced" href="#/app/share">Share</a>
+        <button ng-if="currentPage == '/categories'" class="button icon-left ion-social-whatsapp button-balanced" ng-click="whatsappShare();"></button>
         <button ng-if="currentPage == '/order'" ng-class="{'ion-minus-circled': requestDelete == false,'ion-plus-circled': requestDelete == true}" class="button button-icon icon button-assertive ion-minus-circled" ng-click="takeTODelete();" style="color: #e42012;"></button>
       </ion-nav-buttons>
 

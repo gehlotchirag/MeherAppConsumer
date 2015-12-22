@@ -39,10 +39,16 @@ angular.module('starter.controllers')
         getCartItem: function () {
           return cartData.length;
         },
+
+        emptyCart: function () {
+          cartData = [];
+          return cartData;
+        },
         setCartItem: function (element) {
           cartData.pushIfNotExist(element, function(e) {
             return e.name === element.name && e.price === element.price;
           });
         }
+
       };
     });

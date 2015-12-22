@@ -97,7 +97,7 @@ angular.module('ion-google-place', [])
                   if (enabled){
                     window.subLocality = null;
                     var location = {
-                      formatted_address: 'getting current location...'
+                      formatted_address: 'Getting current location...'
                     };
                     ngModel.$setViewValue(location);
                     element.attr('value', location.formatted_address);
@@ -261,10 +261,33 @@ angular.module('ion-google-place', [])
                 };
                 geocoder.geocode({'location': latlng}, function (results, status) {
                   if (status == google.maps.GeocoderStatus.OK) {
-                    if (results[1]) {
-                      resolve(results[1]);
+
+                    var processedResult =  results[0];
+                    var addressArr = [];
+                    var tempaddress = processedResult.address_components;
+
+                    tempaddress = tempaddress.filter(function (obj) {
+                      if (obj.types.indexOf("premise") == -1 && obj.types.indexOf("street_number") == -1 && obj.types.indexOf("administrative_area_level_2") == -1 )  {
+                         addressArr.push(obj.long_name);
+                      }
+                      return obj;
+                    });
+
+                    var formatedString = addressArr.join();
+                    formatedString = formatedString.replace(/,/g , ", ");
+                    processedResult.formatted_address = formatedString;
+
+                    ngModel.$setViewValue(processedResult);
+                    element.attr('value', processedResult.formatted_address);
+                    ngModel.$render();
+                    el.element.css('display', 'none');
+                    $ionicBackdrop.release();
+
+
+                    if (processedResult) {
+                      resolve(processedResult);
                     } else {
-                      resolve(results[0])
+                      resolve(processedResult)
                     }
                   } else {
                     // TODO in case of error
