@@ -15,27 +15,28 @@
     "shelljs": "^0.3.0"
   },
   "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.device",
+    "org.apache.cordova.media",
+    "org.apache.cordova.file",
+    "com.ionic.keyboard",
     "cordova-plugin-geolocation",
+    "org.apache.cordova.vibration",
+    "cordova.plugins.diagnostic",
     {
       "locator": "https://github.com/cordova-sms/cordova-sms-plugin.git",
       "id": "com.cordova.plugins.sms"
     },
-    "cordova-plugin-whitelist",
-    "com.ionic.keyboard",
     {
       "locator": "https://github.com/phonegap-build/PushPlugin.git",
       "id": "com.phonegap.plugins.PushPlugin"
     },
     {
       "locator": "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin.git",
-      "id": "nl.x-services.plugins.toast"
+      "id": "cordova-plugin-x-toast"
     },
-    "org.apache.cordova.dialogs",
-    "org.apache.cordova.file",
-    "org.apache.cordova.media",
-    "org.apache.cordova.vibration",
-    "cordova.plugins.diagnostic",
-    "org.apache.cordova.device",
     {
       "locator": "https://github.com/litehelpers/Cordova-sqlite-storage.git",
       "id": "cordova-sqlite-storage"
@@ -43,9 +44,7 @@
     {
       "locator": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
       "id": "cordova-plugin-x-socialsharing"
-    },
-    "org.apache.cordova.splashscreen",
-    "cordova-plugin-whitelist@~1.1.0"
+    }
   ],
   "cordovaPlatforms": [
     "android",
