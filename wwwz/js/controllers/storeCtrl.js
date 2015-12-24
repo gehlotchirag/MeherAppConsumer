@@ -70,6 +70,10 @@ angular.module('starter.controllers')
           productItem.quantity = productItem.quantity - 1;
           $scope.updateCart(productItem)
         }
+        else{
+          productItem.ordernow=false;
+          $scope.updateCart(productItem)
+        }
       };
 
       $scope.addcustomProduct = function() {

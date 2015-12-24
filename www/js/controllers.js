@@ -7,7 +7,7 @@ angular.module('starter.controllers', [])
         window.localStorage['MeherDeviceId'];
 
         $scope.cartList=CartData.getCart();
-        $scope.cartList = CartData.getCart();
+        $scope.cartItems = CartData.getCart();
         $scope.delete=function(){
             alert('you have delete item')
         }
@@ -71,7 +71,7 @@ angular.module('starter.controllers', [])
         };
 
         $scope.updateCart = function (productItem) {
-            $scope.cartList = $scope.cartList.filter(function (obj) {
+            $scope.cartItems = $scope.cartItems.filter(function (obj) {
                 //console.log(obj);
                 if (obj.name == productItem.name) {
                     console.log(obj);
@@ -80,37 +80,29 @@ angular.module('starter.controllers', [])
                 }
                 return obj;
             });
-            console.log($scope.cartList);
-            CartData.copyCart($scope.cartList);
+            console.log($scope.cartItems);
+            CartData.copyCart($scope.cartItems);
             $scope.cartTotal = $scope.getCartTotal();
         };
-        //
-        //$scope.$watchCollection('cartList', function (newValue, oldValue) {
-        //    if (newValue !== oldValue) {
-        //        console.log("watch triggered !!");
-        //        CartData.setCart(newValue);
-        //        $scope.cartTotal = $scope.getCartTotal();
-        //    }
-        //});
 
-
-      $scope.$watchCollection(CartData.getCart(), function (newValue, oldValue) {
-        if (newValue !== oldValue) {
-          console.log("watch triggered !!");
-          CartData.setCart(newValue);
-          $scope.cartTotal = $scope.getCartTotal();
-        }
-      });
+        $scope.$watchCollection('cartItems', function (newValue, oldValue) {
+            if (newValue !== oldValue) {
+                console.log("watch triggered !!");
+                CartData.setCart(newValue);
+                $scope.cartTotal = $scope.getCartTotal();
+            }
+        });
 
 
 
-      $scope.getCartTotal = function () {
+
+        $scope.getCartTotal = function () {
             var total = 0;
-            console.log($scope.cartList);
-            //CartData.setCart($scope.cartList)
-            angular.forEach($scope.cartList, function (item) {
+            console.log($scope.cartItems);
+            //CartData.setCart($scope.cartItems)
+            angular.forEach($scope.cartItems, function (item) {
                 console.log(item);
-                if ($scope.cartList.length > 0 && item.price)
+                if ($scope.cartItems.length > 0 && item.price)
                     total = total + (item.price);
                 else
                     total = 0
@@ -152,20 +144,14 @@ angular.module('starter.controllers', [])
         $scope.$broadcast('composeSMS');
       };
 
-      //$scope.$watchCollection(function () { return CartData.getCart(); }, function (newValue, oldValue) {
-      //  if (newValue !== oldValue)
-      //  {
-      //    $scope.cartList=CartData.getCart();
-      //    $scope.grandTotal = $scope.getcartTotal();
-      //  }
-      //});
-      $scope.$on('cartChanged', function(event)
-
-      {
-        console.log("got it cartchanged")
-        $scope.cartList=CartData.getCart();
-
+      $scope.$watchCollection(function () { return CartData.getCart(); }, function (newValue, oldValue) {
+        if (newValue !== oldValue)
+        {
+          $scope.cartList=CartData.getCart();
+          $scope.grandTotal = $scope.getcartTotal();
+        }
       });
+
       $scope.getcartTotal = function() {
         angular.forEach($scope.cartList, function(item, key){
           if(item.price) {

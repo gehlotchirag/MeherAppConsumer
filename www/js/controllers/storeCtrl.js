@@ -3,7 +3,7 @@
  */
 angular.module('starter.controllers')
 
-    .controller('storeCtrl', function($scope, $http, $stateParams,CartData,StoreData,$ionicLoading,$ionicSlideBoxDelegate,$location,$ionicFilterBar,$rootScope) {
+    .controller('storeCtrl', function($scope, $http, $stateParams,CartData,StoreData,$ionicLoading,$ionicSlideBoxDelegate,$location,$ionicFilterBar) {
       $scope.storelistId = ($stateParams.storelistId);
       $scope.storeId = ($stateParams.storeId);
       $scope.cartItems = CartData.getCart();
@@ -57,7 +57,6 @@ angular.module('starter.controllers')
             }
 
             if(!untickDone) {
-              debugger
                 var j;
                 for (j = 0; j < $scope.productCatalog.length; j++) {
                     var existingItems = $scope.productCatalog[j].products;
@@ -65,13 +64,9 @@ angular.module('starter.controllers')
                     for (i = 0; i < existingItems.length; i++) {
                         if ($scope.currentObj.name == existingItems[i].name) {
                             //alert("matched")
-                          console.log($scope.productCatalog[j].products[i])
-                          console.log($scope.productCatalog[j].products[i].ordernow)
-                          $scope.productCatalog[j].products[i].ordernow = false;
-                          existingItems[i].ordernow = false;
-                          console.log($scope.productCatalog[j].products[i])
-                          console.log($scope.productCatalog[j].products[i].ordernow)
-                          break;
+                            console.log($scope.currentObj)
+                            $scope.productCatalog[j].products[i].ordernow = false;
+                            break;
                         }
                     }
                 }
@@ -81,7 +76,7 @@ angular.module('starter.controllers')
         };
 
         $scope.untick = function(obj) {
-           // alert("lets utick first")
+            alert("lets utick first")
         };
 
         $scope.CallTel = function(tel) {
@@ -101,7 +96,7 @@ angular.module('starter.controllers')
         console.log("UPDATE!!!!!!!!");
         $scope.cartItems = $scope.cartItems.filter(function( obj ) {
           //console.log(obj);
-          if (obj.name == productItem.name)
+          if (obj.$$hashKey == productItem.$$hashKey)
           {
             console.log(obj);
             obj.quantity = productItem.quantity;
@@ -111,13 +106,10 @@ angular.module('starter.controllers')
         });
         CartData.copyCart($scope.cartItems);
         console.log(CartData.getCart());
-        consolog.log("sending cartchanged")
-        $rootScope.$broadcast('cartChanged');
       };
 
       $scope.increaseQuantity = function(productItem) {
         if (productItem.quantity > 0){
-          console.log(productItem);
           productItem.price = productItem.price + (productItem.price /productItem.quantity);
           productItem.quantity = productItem.quantity + 1;
         }
@@ -134,8 +126,15 @@ angular.module('starter.controllers')
           productItem.quantity = productItem.quantity - 1;
           $scope.updateCart(productItem)
         }
-        else if(productItem.quantity == 1){
+        else {
+          for (var i in $scope.cartItems) {
+            if ($scope.cartItems [i] === productItem) {
+              $scope.cartItems.splice(i, 1);
+            }
+          }
+          CartData.setCart($scope.cartItems);
           productItem.ordernow = false;
+
           $scope.updateCart(productItem);
         }
       };
@@ -188,8 +187,6 @@ angular.module('starter.controllers')
           console.log($scope.cartItems);
           CartData.setCart($scope.cartItems);
           console.log(CartData.getCart());
-          console.log("sending cartchanged")
-          $rootScope.$broadcast('cartChanged');
         }
         else{
           console.log("removing")
@@ -213,9 +210,6 @@ angular.module('starter.controllers')
           }
           CartData.setCart($scope.cartItems);
           //CartData.copyCart($scope.cartItems);
-          console.log("sending cartchanged")
-          $rootScope.$broadcast('cartChanged');
-
           console.log(CartData.getCart());
         }
       };

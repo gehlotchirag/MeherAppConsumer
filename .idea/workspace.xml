@@ -2,303 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="426e2542-a2aa-4227-86ad-b10984bb7a51" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/css/ionicons.min.css" afterPath="$PROJECT_DIR$/wwwz/css/ionicons.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/wwwz/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/clothes.png" afterPath="$PROJECT_DIR$/wwwz/img/clothes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/electronic.png" afterPath="$PROJECT_DIR$/wwwz/img/electronic.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/fruits.png" afterPath="$PROJECT_DIR$/wwwz/img/fruits.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/grocery.jpg" afterPath="$PROJECT_DIR$/wwwz/img/grocery.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/ionic.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/img/ionic.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/pharmacy.png" afterPath="$PROJECT_DIR$/wwwz/img/pharmacy.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/img/resturant.png" afterPath="$PROJECT_DIR$/wwwz/img/resturant.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/wwwz/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/wwwz/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/categoriesCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/categoriesCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/contactCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/contactCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/loginCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/loginCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/orderCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/orderCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/otpCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/otpCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/postOrderCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/shareCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/shareCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/showCaseCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/showCaseCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/controllers/storeListCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/storeListCtrl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/factory.js" afterPath="$PROJECT_DIR$/wwwz/js/factory.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/factory/cart-data.js" afterPath="$PROJECT_DIR$/wwwz/js/factory/cart-data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/factory/store-data.js" afterPath="$PROJECT_DIR$/wwwz/js/factory/store-data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/helpers/greatCircle.js" afterPath="$PROJECT_DIR$/wwwz/js/helpers/greatCircle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/helpers/slidingTabs.css" afterPath="$PROJECT_DIR$/wwwz/js/helpers/slidingTabs.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/helpers/slidingTabsDirective.js" afterPath="$PROJECT_DIR$/wwwz/js/helpers/slidingTabsDirective.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/services.js" afterPath="$PROJECT_DIR$/wwwz/js/services.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/js/services/storeService.js" afterPath="$PROJECT_DIR$/wwwz/js/services/storeService.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-animate/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-animate/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-animate/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/angular-animate/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-animate/angular-animate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-animate/angular-animate.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js.map" afterPath="$PROJECT_DIR$/wwwz/lib/angular-animate/angular-animate.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-animate/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-animate/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-animate/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-animate/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/angular-sanitize.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/angular-sanitize.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js.map" afterPath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/angular-sanitize.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/CHANGELOG.md" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/CHANGELOG.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/CONTRIBUTING.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/LICENSE" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/api/angular-ui-router.d.ts" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/api/angular-ui-router.d.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/release/angular-ui-router.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/release/angular-ui-router.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/common.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/resolve.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/resolve.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/state.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/state.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateDirectives.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/stateDirectives.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateFilters.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/stateFilters.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/templateFactory.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/templateFactory.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlMatcherFactory.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/urlMatcherFactory.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlRouter.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/urlRouter.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/view.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/view.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewDirective.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/viewDirective.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewScroll.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/viewScroll.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/angular/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/angular-csp.css" afterPath="$PROJECT_DIR$/wwwz/lib/angular/angular-csp.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/angular.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular/angular.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/angular/angular.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/wwwz/lib/angular/angular.min.js.gzip" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/wwwz/lib/angular/angular.min.js.map" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/angular/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/angular/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/LICENSE" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/brown.jpg" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/brown.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/delorean.jpg" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/delorean.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/demo-card.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-card.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/demo-click-on-affix.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-click-on-affix.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/demo-group-header.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-group-header.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/demo-performance.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-performance.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/demo-simple.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-simple.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/index.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/demo/mcfly.jpg" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/mcfly.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/gulpfile.js" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/gulpfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/ion-affix.js" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/ion-affix.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-affix/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/ion-affix/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-google-place/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ion-google-place/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-google-place/LICENSE" afterPath="$PROJECT_DIR$/wwwz/lib/ion-google-place/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-google-place/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ion-google-place/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-google-place/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ion-google-place/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-google-place/ion-google-place.css" afterPath="$PROJECT_DIR$/wwwz/lib/ion-google-place/ion-google-place.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-google-place/ion-google-place.js" afterPath="$PROJECT_DIR$/wwwz/lib/ion-google-place/ion-google-place.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-sticky/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ion-sticky/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-sticky/LICENSE" afterPath="$PROJECT_DIR$/wwwz/lib/ion-sticky/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-sticky/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ion-sticky/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-sticky/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ion-sticky/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-sticky/demo.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-sticky/demo.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-sticky/ion-sticky.js" afterPath="$PROJECT_DIR$/wwwz/lib/ion-sticky/ion-sticky.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ion-sticky/select.html" afterPath="$PROJECT_DIR$/wwwz/lib/ion-sticky/select.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-filter-bar/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-filter-bar/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-filter-bar/dist/ionic.filter.bar.css" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-filter-bar/dist/ionic.filter.bar.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-filter-bar/dist/ionic.filter.bar.min.css" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-filter-bar/dist/ionic.filter.bar.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-filter-bar/scss/ionic.filter.bar.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/scss/ionic.filter.bar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/.bowerrc" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.bowerrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/.gitignore" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/.jshintrc" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.jshintrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/.travis.yml" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.travis.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/CHANGELOG.md" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/CHANGELOG.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/LICENSE" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/dist/ion-pullup.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/ion-pullup.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/.bowerrc" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/.bowerrc" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/.gitignore" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/.gitignore" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/config.xml" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/config.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/gulpfile.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/gulpfile.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/hooks/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/hooks/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/hooks/after_prepare/010_add_platform_class.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/hooks/after_prepare/010_add_platform_class.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/ionic.project" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/ionic.project" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/icon/drawable-hdpi-icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-hdpi-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/icon/drawable-ldpi-icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-ldpi-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/icon/drawable-mdpi-icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-mdpi-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/icon/drawable-xhdpi-icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-xhdpi-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-xxhdpi-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-xxxhdpi-icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-land-hdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-hdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-land-ldpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-ldpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-land-mdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-mdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-land-xhdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-xhdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-land-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-xxhdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-port-hdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-hdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-port-ldpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-ldpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-port-mdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-mdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-port-xhdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-xhdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-port-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-xxhdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-40.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-40.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-40@2x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-40@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-50.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-50.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-50@2x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-50@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-60.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-60.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-60@2x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-60@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-60@3x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-60@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-72.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-72.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-72@2x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-72@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-76.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-76.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-76@2x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-76@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-small.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-small.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-small@2x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-small@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon-small@3x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-small@3x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/icon/icon@2x.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-568h@2x~iphone.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-568h@2x~iphone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-667h.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-667h.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-736h.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-736h.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape-736h.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape-736h.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape@2x~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape~ipad.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Portrait@2x~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Portrait~ipad.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default@2x~iphone.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default@2x~iphone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/ios/splash/Default~iphone.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default~iphone.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/resources/splash.png" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/splash.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/scss/ionic.app.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/css/style.css" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/css/style.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/img/ionic.png" afterPath="$PROJECT_DIR$/wwwz/img/ionic.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/index.html" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/js/app.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/app.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/js/controllers.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/controllers.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/js/ion-pullup.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/dist/ion-pullup.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/js/services.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/services.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/templates/chat-detail.html" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/chat-detail.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/templates/tab-account.html" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tab-account.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/templates/tab-chats.html" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tab-chats.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/templates/tab-dash.html" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tab-dash.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/example/www/templates/tabs.html" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tabs.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/karma.conf.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/karma.conf.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic-pullup/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/css/ionic.css" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/css/ionic.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/css/ionic.min.css" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/css/ionic.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.eot" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.svg" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.ttf" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/fonts/ionicons.woff" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic-angular.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic-angular.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.bundle.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.bundle.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_action-sheet.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_action-sheet.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_animations.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_animations.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_backdrop.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_backdrop.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_badge.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_badge.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_bar.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_bar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_button-bar.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_button-bar.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_button.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_button.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_checkbox.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_checkbox.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_form.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_form.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_grid.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_grid.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_items.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_items.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_list.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_list.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_loaders.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_loaders.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_loading.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_loading.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_menu.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_menu.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_mixins.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_mixins.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_modal.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_modal.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_platform.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_platform.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_popover.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_popover.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_popup.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_popup.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_progress.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_progress.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_radio.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_radio.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_range.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_range.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_refresher.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_refresher.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_reset.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_reset.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_scaffolding.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_scaffolding.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_select.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_select.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_slide-box.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_slide-box.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_spinner.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_spinner.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_split-pane.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_split-pane.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_tabs.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_tabs.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_toggle.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_toggle.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_transitions.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_transitions.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_type.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_type.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_util.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_util.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/_variables.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/ionic.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionic.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/_ionicons-animation.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-animation.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/_ionicons-font.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-font.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/_ionicons-icons.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-icons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/_ionicons-variables.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-variables.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ionic/scss/ionicons/ionicons.scss" afterPath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/ionicons.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/LICENSE.txt" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/LICENSE.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/matchMedia.addListener.js" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/matchMedia.addListener.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/matchMedia.js" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/matchMedia.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/test/body.html" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/body.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/test/head.html" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/head.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/test/iframe_body.html" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/iframe_body.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/test/iframe_head.html" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/iframe_head.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/matchmedia/test/lib/JSLitmus.js" afterPath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/lib/JSLitmus.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/CHANGELOG.md" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/CHANGELOG.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/LICENSE" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova-mocks.js" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova-mocks.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova-mocks.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova-mocks.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova.js" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/dist/ng-cordova.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngCordova/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/ngCordova/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/.bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/.bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/LICENSE" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/LICENSE" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/README.md" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/bower.json" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/bower.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/dist/sticky.min.js" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/dist/sticky.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/examples/demo.html" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/examples/demo.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/lib/sticky.js" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/lib/sticky.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/ngSticky/package.json" afterPath="$PROJECT_DIR$/wwwz/lib/ngSticky/package.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/plugin/PushCustom.js" afterPath="$PROJECT_DIR$/wwwz/lib/plugin/PushCustom.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/plugin/PushNotification.js" afterPath="$PROJECT_DIR$/wwwz/lib/plugin/PushNotification.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/plugin/angular-example.js" afterPath="$PROJECT_DIR$/wwwz/lib/plugin/angular-example.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/plugin/angularpushnotification.js" afterPath="$PROJECT_DIR$/wwwz/lib/plugin/angularpushnotification.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/lib/plugin/push.js" afterPath="$PROJECT_DIR$/wwwz/lib/plugin/push.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/partial/location-search.html" afterPath="$PROJECT_DIR$/wwwz/partial/location-search.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/about.html" afterPath="$PROJECT_DIR$/wwwz/templates/about.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/categories.html" afterPath="$PROJECT_DIR$/wwwz/templates/categories.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/contact.html" afterPath="$PROJECT_DIR$/wwwz/templates/contact.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/login.html" afterPath="$PROJECT_DIR$/wwwz/templates/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/menu.html" afterPath="$PROJECT_DIR$/wwwz/templates/menu.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/order.html" afterPath="$PROJECT_DIR$/wwwz/templates/order.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/otp.html" afterPath="$PROJECT_DIR$/wwwz/templates/otp.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/post-order.html" afterPath="$PROJECT_DIR$/wwwz/templates/post-order.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/register.html" afterPath="$PROJECT_DIR$/wwwz/templates/register.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/share.html" afterPath="$PROJECT_DIR$/wwwz/templates/share.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/showCase.html" afterPath="$PROJECT_DIR$/wwwz/templates/showCase.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/store.html" afterPath="$PROJECT_DIR$/wwwz/templates/store.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/www/templates/storelist.html" afterPath="$PROJECT_DIR$/wwwz/templates/storelist.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js" afterPath="$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js" />
     </list>
     <ignored path="meher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -319,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="storeCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="storeCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/controllers/storeCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-37.77778">
-              <caret line="70" column="39" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.5011236">
+              <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -332,18 +38,18 @@
       <file leaf-file-name="store.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/store.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7083334">
-              <caret line="134" column="73" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="73" />
+            <state vertical-scroll-proportion="-5.4583335">
+              <caret line="165" column="88" selection-start-line="165" selection-start-column="88" selection-end-line="165" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46741572">
-              <caret line="165" column="39" selection-start-line="165" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.5555556">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -357,7 +63,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/showCaseCtrl.js" />
         <option value="$PROJECT_DIR$/www/templates/showCase.html" />
         <option value="$PROJECT_DIR$/www/lib/ionic/css/ionic.css" />
@@ -406,8 +111,9 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/js/controllers/pastOrder.js" />
         <option value="$PROJECT_DIR$/www/templates/store.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" />
       </list>
     </option>
   </component>
@@ -975,14 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -1131,26 +829,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5555556">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/store.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7083334">
-          <caret line="134" column="73" selection-start-line="134" selection-start-column="58" selection-end-line="134" selection-end-column="73" />
+        <state vertical-scroll-proportion="-5.4583335">
+          <caret line="165" column="88" selection-start-line="165" selection-start-column="88" selection-end-line="165" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="140" column="0" selection-start-line="134" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/storeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-37.77778">
-          <caret line="70" column="39" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46741572">
-          <caret line="165" column="39" selection-start-line="165" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5011236">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding />
         </state>
       </provider>
