@@ -19,7 +19,7 @@
 
       <ion-nav-buttons side="right">
         <button ng-if="currentPage == '/categories'" class="button icon-left ion-social-whatsapp button-balanced" ng-click="whatsappShare();"></button>
-        <button ng-if="currentPage == '/order'" ng-class="{'ion-minus-circled': requestDelete == false,'ion-plus-circled': requestDelete == true}" class="button button-icon icon button-assertive ion-minus-circled" ng-click="takeTODelete();" style="color: #e42012;"></button>
+        <!--<button ng-if="currentPage == '/order'" ng-class="{'ion-minus-circled': requestDelete == false,'ion-plus-circled': requestDelete == true}" class="button button-icon icon button-assertive ion-minus-circled" ng-click="takeTODelete();" style="color: #e42012;"></button>-->
       </ion-nav-buttons>
 
     </ion-nav-bar>
@@ -33,8 +33,12 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close ng-click="login()">
-          Register Store
+        <!--<ion-item menu-close ng-click="login()">-->
+          <!--Register Store-->
+        <!--</ion-item>-->
+
+        <ion-item menu-close href="#/app/pastorder">
+          Past Orders
         </ion-item>
         <ion-item menu-close href="#/app/about">
           About

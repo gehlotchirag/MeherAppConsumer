@@ -13,15 +13,16 @@ angular.module('jett.ionic.filter.bar', ['ionic']);
         //create platform specific filterBar template using filterConfig items
         if ($ionicPlatform.is('android')) {
           filterBarTemplate =
-            '<div class="filter-bar-wrapper filter-bar-{{::config.theme}} filter-bar-transition-{{::config.transition}}">' +
+              '<div class="filter-bar-wrapper filter-bar-{{::config.theme}} filter-bar-transition-{{::config.transition}}">' +
               '<div class="bar bar-header bar-{{::config.theme}} item-input-inset">' +
-                '<button class="filter-bar-cancel button button-icon icon {{::config.back}}"></button>' +
-                '<label class="item-input-wrapper">' +
-                  '<input type="search" class="filter-bar-search" ng-model="data.filterText" placeholder="{{::config.placeholder}}" />' +
-                  '<button class="filter-bar-clear button button-icon icon" ng-class="getClearButtonClass()"></button>' +
-                '</label>' +
+              '<label class="item-input-wrapper">' +
+              '<i class="icon {{::config.search}} placeholder-icon"></i>' +
+              '<input type="search" class="filter-bar-search" ng-model="data.filterText" placeholder="{{::config.placeholder}}"/>' +
+              '<button class="filter-bar-clear button button-icon icon" ng-class="getClearButtonClass()"></button>' +
+              '</label>' +
+              '<button class="filter-bar-cancel button button-clear" ng-bind-html="::cancelText"></button>' +
               '</div>' +
-            '</div>';
+              '</div>';
         } else {
           filterBarTemplate =
             '<div class="filter-bar-wrapper filter-bar-{{::config.theme}} filter-bar-transition-{{::config.transition}}">' +

@@ -20,7 +20,7 @@
   .filter-bar .filter-bar-wrapper {
     z-index: 11;
     position: absolute;
-    top: 0;
+    top: 90px;
     right: 0;
     width: 100%; }
     .filter-bar .filter-bar-wrapper .item-input-inset .icon.placeholder-icon:before {

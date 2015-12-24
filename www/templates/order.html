@@ -1,87 +1,83 @@
 <ion-view view-title="Order Summary">
   <ion-content>
     <!--<h1>Order Page</h1>-->
-    <div id="cart-bar">
-        <div class="row" id="order-header" style="padding-bottom: 0px; !important;" >
-          <div class="col" style="padding-bottom: 0px; padding-left:0px;">
-            <!--<button class="button button-icon icon assertive ion-minus-circled" ng-click="toggleShowDelete();" style="margin-top: -12px;"></button>-->
-            Items</div>
-          <div class="col col-50 text-right">Quantity</div>
-          <div class="col text-right"> Price (Rs.)</div>
-        </div>
+      <div class="item-divider">
+          <span class="col text-center">Delivery Address</span>
+          </div>
+          <div class="list">
+              <label class="item item-input">
+                  <input id="house-address" type="text" placeholder="House Number, Street Name" ng-model="formData.userAddress">
+              </label>
+              <label class="item item-input">
+                  <input type="text" ng-model="formData.userSublocality">
+              </label>
+          </div>
+          <div class="padding">
+              <button class="button button-block button-balanced activated" ng-click="retriveLocal()">Place Order</button>
+          </div>
+      </div>
 
-      <ion-list id="product-list" class=" cartorder" show-delete="showDelete">
-        <!--<div class="cart-order-list">-->
-          <ion-scroll style="max-height: 200px">
-            <ion-item id="order-itemList" class="item-remove-animate" ng-repeat="(key, product) in cartItems track by $index" >
+      <!--<div id="cart-bar">-->
 
-              <div class="col hyphenate" style="white-space: normal;" ng-class="(showDelete ? 'col-66' : '')">
-              <div ng-class="(product.quantity ? 'shit-top' : '')">
-            {{x= $index+1}}) {{product.name}}
-              </div>
-              </div>
-
-            <div class="col col-50 text-center" ng-if="product.customQuantity">
-              {{product.customQuantity}}
-            </div>
-
-            <div class="col col-50 text-center" ng-if="product.quantity && !showDelete" >
-
-              <!--<a class="button button-icon icon positive ion-ios-minus-outline" ng-click="decreaseQuantity(product)"></a>-->
-              <!--{{product.quantity}}-->
-              <!--<a class="button button-icon icon positive ion-ios-plus-outline" ng-click="increaseQuantity(product)"></a>-->
-              <!--<br/>-->
-                <!--<span class="item-note">-->
-                  <!--{{product.unit}}-->
-                <!--</span>-->
-              <a class="button button-icon icon positive ion-ios-minus-outline" ng-click="decreaseQuantity(product)" style="padding-right: 2px!important;"></a>
-              {{product.quantity}}
-              <a class="button button-icon icon positive ion-ios-plus-outline" ng-click="increaseQuantity(product)" style="padding-right: 2px!important;"></a>
-                <span style="display: block;color: #aaa;font-size: 14px; text-align: center; margin-top: -12px">
-                {{product.unit}}
-                </span>
-
-            </div>
-
-            <div class="col col-10 text-center" style="margin-top: 10px;">
-              {{product.price || "- -"}}
-            </div>
-              <ion-delete-button class="ion-minus-circled"
-                                 ng-click="onDeleteItem(product,key)">
-              </ion-delete-button>
-
-            </ion-item>
-          </ion-scroll>
+        <!--<div class="row" id="order-header" style="padding-bottom: 0px; !important;" >-->
+          <!--<div class="col" style="padding-bottom: 0px; padding-left:0px;">-->
+            <!--&lt;!&ndash;<button class="button button-icon icon assertive ion-minus-circled" ng-click="toggleShowDelete();" style="margin-top: -12px;"></button>&ndash;&gt;-->
+            <!--Items</div>-->
+          <!--<div class="col col-50 text-right">Quantity</div>-->
+          <!--<div class="col text-right"> Price (Rs.)</div>-->
         <!--</div>-->
 
-        <div class="row" id="order-header">
-          <div class="col">
-            <span class="price-text">*Estimate price undisclosed to store</span>
-          </div>
-          <div class="col col-30 text-right">
-            <b>Total:</b> {{cartTotal | number:0}}
-          </div>
-        </div>
+      <!--<ion-list id="product-list" class=" cartorder" show-delete="showDelete">-->
+        <!--&lt;!&ndash;<div class="cart-order-list">&ndash;&gt;-->
+          <!--<ion-scroll style="max-height: 200px">-->
+            <!--<ion-item id="order-itemList" class="item-remove-animate" ng-repeat="(key, product) in cartItems track by $index" >-->
 
-      </ion-list>
-    </div>
+              <!--<div class="col hyphenate" style="white-space: normal;" ng-class="(showDelete ? 'col-66' : '')">-->
+              <!--<div ng-class="(product.quantity ? 'shit-top' : '')">-->
+            <!--{{x= $index+1}}) {{product.name}}-->
+              <!--</div>-->
+              <!--</div>-->
+
+            <!--<div class="col col-50 text-center" ng-if="product.customQuantity">-->
+              <!--{{product.customQuantity}}-->
+            <!--</div>-->
+
+            <!--<div class="col col-50 text-center" ng-if="product.quantity && !showDelete" >-->
+
+              <!--<a class="button button-icon icon positive ion-ios-minus-outline" ng-click="decreaseQuantity(product)" style="padding-right: 2px!important;"></a>-->
+              <!--{{product.quantity}}-->
+              <!--<a class="button button-icon icon positive ion-ios-plus-outline" ng-click="increaseQuantity(product)" style="padding-right: 2px!important;"></a>-->
+                <!--<span style="display: block;color: #aaa;font-size: 14px; text-align: center; margin-top: -12px">-->
+                <!--{{product.unit}}-->
+                <!--</span>-->
+
+            <!--</div>-->
+
+            <!--<div class="col col-10 text-center" style="margin-top: 10px;">-->
+              <!--{{product.price || "- -"}}-->
+            <!--</div>-->
+              <!--<ion-delete-button class="ion-minus-circled"-->
+                                 <!--ng-click="onDeleteItem(product,key)">-->
+              <!--</ion-delete-button>-->
+
+            <!--</ion-item>-->
+          <!--</ion-scroll>-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+        <!--<div class="row" id="order-header">-->
+          <!--<div class="col">-->
+            <!--<span class="price-text">*Estimate price undisclosed to store</span>-->
+          <!--</div>-->
+          <!--<div class="col col-30 text-right">-->
+            <!--<b>Total:</b> {{cartTotal | number:0}}-->
+          <!--</div>-->
+        <!--</div>-->
+
+      <!--</ion-list>-->
+    <!--</div>-->
 
   </ion-content>
 
-  <div id ="address-bar" style="position: absolute; bottom: 50px; width: 100%; background-color: white;">
-    <h4 class="item text-center">Delivery Address</h4>
-    <div class="list">
-      <label class="item item-input">
-        <input id="house-address" type="text" placeholder="House Number, Street Name" ng-model="formData.userAddress">
-      </label>
-      <label class="item item-input">
-        <input type="text" ng-model="formData.userSublocality">
-      </label>
-    </div>
-    <div class="padding">
-      <button class="button button-block button-balanced activated" ng-click="retriveLocal()">Place Order</button>
-    </div>
-  </div>
 
 
 </ion-view>

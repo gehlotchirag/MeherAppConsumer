@@ -33,6 +33,5 @@
   },
   "_source": "git://github.com/aliok/ion-affix.git",
   "_target": "~1.0.1",
-  "_originalSource": "ion-affix",
-  "_direct": true
+  "_originalSource": "ion-affix"
 }

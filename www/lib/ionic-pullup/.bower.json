@@ -16,6 +16,5 @@
   },
   "_source": "git://github.com/arielfaur/ionic-pullup.git",
   "_target": "~1.0.3",
-  "_originalSource": "ionic-pullup",
-  "_direct": true
+  "_originalSource": "ionic-pullup"
 }

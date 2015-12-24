@@ -1,13 +1,139 @@
 angular.module('starter.controllers', [])
 
-    .controller('LoadCtrl', function($scope, $cordovaPush, $cordovaDialogs, $cordovaMedia, $cordovaToast, ionPlatform, $http,CartData,$location,$cordovaDevice,$state,$rootScope,$cordovaSocialSharing) {
-      $scope.notifications = [];
+    .controller('LoadCtrl', function($scope, $cordovaPush, $cordovaDialogs, $cordovaMedia, $cordovaToast, ionPlatform, $http,CartData,$location,$cordovaDevice,$state,$rootScope,$ionicPopup) {$scope.notifications = [];
       $scope.cartList=CartData.getCart();
       $scope.grandTotal;
         $scope.requestDelete = false;
         window.localStorage['MeherDeviceId'];
-        
-      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+
+        $scope.cartList=CartData.getCart();
+        $scope.cartList = CartData.getCart();
+        $scope.delete=function(){
+            alert('you have delete item')
+        }
+        $scope.showConfirm = function(productItem) {
+
+            var confirmPopup = $ionicPopup.confirm({
+
+                title: 'Conformation',
+
+                template: 'are you sure you want to delete',
+
+            });
+
+            //alert(JSON.stringify(productItem));
+            confirmPopup.then(function(res) {
+
+                if (res) {
+                    var index = $scope.cartList.indexOf(productItem);
+                    if (index != -1) {
+                        $scope.cartList.splice(index, 1);
+                        //CartData.removeCart($scope.productItem);
+                    }
+
+
+                    $scope.$broadcast('someEvent', productItem);
+
+                    console.log('You clicked on "OK" button');
+
+                } else {
+
+                    console.log('You clicked on "Cancel" button');
+
+                }
+
+            });
+
+        };
+
+
+        $scope.increaseQuantity = function (productItem) {
+            if (productItem.quantity > 1) {
+                productItem.price = productItem.price + (productItem.price / productItem.quantity);
+                productItem.quantity = productItem.quantity + 1;
+            }
+            else {
+                productItem.quantity = productItem.quantity + 1;
+                productItem.price = productItem.price * productItem.quantity;
+            }
+            $scope.updateCart(productItem)
+        };
+
+        $scope.decreaseQuantity = function (productItem) {
+            if (productItem.quantity > 1) {
+                productItem.price = productItem.price - (productItem.price / productItem.quantity);
+                productItem.quantity = productItem.quantity - 1;
+                $scope.updateCart(productItem)
+            }
+            else{
+                $scope.showConfirm(productItem);
+            }
+        };
+
+        $scope.updateCart = function (productItem) {
+            $scope.cartList = $scope.cartList.filter(function (obj) {
+                //console.log(obj);
+                if (obj.name == productItem.name) {
+                    console.log(obj);
+                    obj.quantity = productItem.quantity;
+                    obj.price = productItem.price;
+                }
+                return obj;
+            });
+            console.log($scope.cartList);
+            CartData.copyCart($scope.cartList);
+            $scope.cartTotal = $scope.getCartTotal();
+        };
+        //
+        //$scope.$watchCollection('cartList', function (newValue, oldValue) {
+        //    if (newValue !== oldValue) {
+        //        console.log("watch triggered !!");
+        //        CartData.setCart(newValue);
+        //        $scope.cartTotal = $scope.getCartTotal();
+        //    }
+        //});
+
+
+      $scope.$watchCollection(CartData.getCart(), function (newValue, oldValue) {
+        if (newValue !== oldValue) {
+          console.log("watch triggered !!");
+          CartData.setCart(newValue);
+          $scope.cartTotal = $scope.getCartTotal();
+        }
+      });
+
+
+
+      $scope.getCartTotal = function () {
+            var total = 0;
+            console.log($scope.cartList);
+            //CartData.setCart($scope.cartList)
+            angular.forEach($scope.cartList, function (item) {
+                console.log(item);
+                if ($scope.cartList.length > 0 && item.price)
+                    total = total + (item.price);
+                else
+                    total = 0
+            })
+            return total;
+        };
+
+        $scope.cartTotal = $scope.getCartTotal();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
           //used for menu buttons based on current page logics
         $scope.currentPage = toState.url;
       });
@@ -16,20 +142,6 @@ angular.module('starter.controllers', [])
           $scope.requestDelete = !$scope.requestDelete;
         $rootScope.$emit("CallDelete", {});
       }
-
-      $scope.whatsappShare=function(){
-        var msg="Recommending the awesome Meher app to you. Get groceries, fruits, veggies & more from nearby stores instantly. Download it now";
-
-        $cordovaSocialSharing
-            .shareViaWhatsApp(msg , null, 'https://goo.gl/cxqKEc')
-            .then(function(result) {
-              // Success!
-            }, function(err) {
-              // An error occurred. Show a message to the user
-              alert("Falied")
-            });
-      }
-
 
       $scope.$on('$locationChangeSuccess', function(event) {
         console.log($location.path())
@@ -40,14 +152,20 @@ angular.module('starter.controllers', [])
         $scope.$broadcast('composeSMS');
       };
 
-      $scope.$watchCollection(function () { return CartData.getCart(); }, function (newValue, oldValue) {
-        if (newValue !== oldValue)
-        {
-          $scope.cartList=CartData.getCart();
-          $scope.grandTotal = $scope.getcartTotal();
-        }
-      });
+      //$scope.$watchCollection(function () { return CartData.getCart(); }, function (newValue, oldValue) {
+      //  if (newValue !== oldValue)
+      //  {
+      //    $scope.cartList=CartData.getCart();
+      //    $scope.grandTotal = $scope.getcartTotal();
+      //  }
+      //});
+      $scope.$on('cartChanged', function(event)
 
+      {
+        console.log("got it cartchanged")
+        $scope.cartList=CartData.getCart();
+
+      });
       $scope.getcartTotal = function() {
         angular.forEach($scope.cartList, function(item, key){
           if(item.price) {
@@ -179,12 +297,12 @@ angular.module('starter.controllers', [])
           $http.post('http://getmeher.com:8000/subscribe', JSON.stringify(user))
               .success(function (data, status) {
                 //alert("yes done" + data)
-                //alert("Token stored, device is successfully subscribed to receive push notifications.");
+                console.log("Token stored, device is successfully subscribed to receive push notifications.");
                 //alert("Token stored, device is successfully subscribed to receive push notifications.");
               })
               .error(function (data, status) {
-                ////alert("no not done")
-                //alert("Error storing device token." + data + " " + status)
+                //alert("no not done")
+                console.log("Error storing device token." + data + " " + status)
                 //alert("Error storing device token." + data + " " + status)
               }
           );

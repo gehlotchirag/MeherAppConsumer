@@ -356,3 +356,7 @@ background-color: transparent;
 #status-icon {
     margin-top: 20px;
 }
+
+button#close-btn:before {
+    font-size: 15px !important;
+}

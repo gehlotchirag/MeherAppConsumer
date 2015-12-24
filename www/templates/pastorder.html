@@ -1,0 +1,18 @@
+<ion-view view-title="Past Order List">
+    <ion-content>
+        <div class="row item item-divider">
+            <span class="col text-center">{{orderHeading}}</span>
+        </div>
+
+        <ion-list>
+            <ion-item  class="item item-thumbnail-left" ng-repeat="order in orders" ng-click="postOrder(order)" ng-class="{'blink':order.orderStatus=='sent','strike-order':order.orderStatus=='rejected','strike-order':order.orderStatus=='canceled'}">
+                <img src="img/cart.png">
+                <span>{{order.store.name}}</span>
+                <span style="float: right;">{{order.created | date:'shortTime'}}</span>
+                <p>{{order.store.category}}</p>
+                <p>{{order.store.address}}</p>
+                <span class="badge badge-assertive" style="top:28px;">{{order.order.orderitem.length}}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

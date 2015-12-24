@@ -1,0 +1,53 @@
+<ion-view view-title="Delivery">
+  <ion-content>
+    <div class="row" id="order-header">
+      <div class="col text-center">
+        <b>Order Status</b>
+      </div>
+    </div>
+
+    <div id="status-icon" class="row">
+      <div class="col">
+        <ul class="four steps">
+          <li class="complete">
+            <a href="#0"><i class="ion-ios-compose" style="
+    margin-left: 2px;"></i></a>
+          </li>
+          <li class="complete">
+            <a href="#0"><i class="ion-clipboard"></i></a>
+            <!--<li class="complete"><a href="#0">2</a>-->
+          </li>
+          <li>
+            <a href="#0"><i class="ion-android-bicycle"></i></a>
+          </li>
+          <li>
+            <a href="#0"><i class="ion-bag"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="status-title"class="row">
+      <div class="col">Order Sent</div>
+      <div class="col">Confirming</div>
+      <div class="col">On the way</div>
+      <div class="col">Delivered</div>
+    </div>
+
+    <div class="list">
+      <div class="row item">
+        <div class="col">
+          <button ng-click="CallTel({{StoreSelected.mobile}})" class="button icon-right button-block ion-ios-telephone button-balanced">Call Store</button>
+        </div>
+      </div>
+
+      <div class="row item">
+        <div class="col">
+          <button class="button icon-right button-block ion-arrow-swap ion-ios-cart button-assertive">Shift Cart/ Change Store</button>
+        </div>
+      </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>

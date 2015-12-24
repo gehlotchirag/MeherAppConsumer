@@ -8,7 +8,8 @@
 var db = null;
 var MeherUser ={};
 var MeherMobile = null;
-var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','greatCircles','ion-google-place', 'ionic-pullup','ion-sticky','jett.ionic.filter.bar'])
+var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','greatCircles','ion-google-place','ti-segmented-control','jett.ionic.filter.bar','ionic-pullup'])
+
 
     .run(function($ionicPlatform,$state,$cordovaSQLite) {
       $ionicPlatform.ready(function() {
@@ -34,9 +35,10 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
     })
 
 
+
     .config(function($stateProvider, $urlRouterProvider,$ionicConfigProvider,$ionicFilterBarConfigProvider) {
       $ionicConfigProvider.views.forwardCache(true);
-      //$ionicFilterBarConfigProvider.theme('stable');
+      $ionicFilterBarConfigProvider.theme('stable');
       $ionicFilterBarConfigProvider.clear('ion-close');
       $ionicFilterBarConfigProvider.search('ion-search');
       $ionicFilterBarConfigProvider.backdrop(false);
@@ -51,10 +53,18 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
             templateUrl: 'templates/menu.html',
             controller: 'AppCtrl'
           })
+          .state('app.pastorder', {
+            url: '/pastorder',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/pastorder.html',
+                controller: 'pastOrderCtrl'
+              }
+            }
+          })
 
           .state('app.postorder', {
-            url: '/postorder',
-            cache: false,
+            url: '/postorder/:orderId',
             views: {
               'menuContent': {
                 templateUrl: 'templates/post-order.html',
@@ -62,6 +72,7 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
               }
             }
           })
+
           .state('app.contact', {
             url: '/contact',
             views: {
@@ -165,8 +176,6 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
 
       // if none of the above states are matched, use this as the fallback
       $urlRouterProvider.otherwise('/app/categories');
-      //$urlRouterProvider.otherwise('/app/categories/Grocery/Swastik Super Market');
-      //$urlRouterProvider.otherwise('/app/categories');
       //$urlRouterProvider.otherwise('/app/login');
     });
 

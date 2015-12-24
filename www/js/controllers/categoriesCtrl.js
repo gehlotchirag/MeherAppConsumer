@@ -21,7 +21,7 @@ angular.module('starter.controllers')
               "pageNumber": 1,
               "loadMore": true,
               "link": "groceries",
-              "imagefolder": "images-groceries"
+              "imagefolder": "groceries"
             },
             {
               "title": "Packet-Food",
@@ -29,7 +29,7 @@ angular.module('starter.controllers')
               "pageNumber": 1,
               "loadMore": true,
               "link": "packetfoods",
-              "imagefolder": "packetfoods"
+              "imagefolder": "groceries"
             },
             {
               "title": "Personal-Care",
@@ -37,7 +37,7 @@ angular.module('starter.controllers')
               "pageNumber": 1,
               "loadMore": true,
               "link": "personalcares",
-              "imagefolder": "personalcares"
+              "imagefolder": "groceries"
             },
             {
               "title": "House-Hold",
@@ -47,7 +47,7 @@ angular.module('starter.controllers')
               "pageNumber": 1,
               "loadMore": true,
               "link": "households",
-              "imagefolder": "households"
+              "imagefolder": "groceries"
 
             }
           ]

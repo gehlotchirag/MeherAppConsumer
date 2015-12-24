@@ -10,6 +10,7 @@
     "ion-affix": "~1.0.1",
     "ionic-pullup": "~1.0.3",
     "ion-sticky": "~1.0.4",
-    "ionic-filter-bar": "~1.1.1"
+    "ionic-filter-bar": "~1.1.1",
+    "ti-segmented-control": "~0.0.2"
   }
 }
