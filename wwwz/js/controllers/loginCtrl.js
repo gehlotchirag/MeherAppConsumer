@@ -84,8 +84,8 @@ angular.module('starter.controllers')
         }).then(function (response) {
               // success
               //alert("orderSentToServe");
-              console.log(response);
-              $location.url("/app/postorder");
+              alert(response);
+              $location.url("/app/postorder/"+response.data._id);
             },
             function (response) { // optional
               // failed

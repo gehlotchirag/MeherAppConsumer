@@ -35,6 +35,10 @@ angular.module('starter.controllers')
           cartData = angular.copy(cartList);
           return cartData;
         },
+        emptyCart: function () {
+          cartData = [];
+          return cartData;
+        },
 
         getCartItem: function () {
           return cartData.length;

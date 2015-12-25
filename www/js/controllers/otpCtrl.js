@@ -10,7 +10,6 @@ angular.module('starter.controllers')
       $scope.execute = function(deviceID,mobile,type) {
         var query = "INSERT INTO Meher_user (deviceID, mobile,type) VALUES (?,?,?)";
         $cordovaSQLite.execute(window.db, query, [deviceID, mobile, type]).then(function(res) {
-          alert("insertId: " + res.insertId);
         }, function (err) {
           alert(err);
         });

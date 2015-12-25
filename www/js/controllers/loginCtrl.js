@@ -3,7 +3,7 @@
  */
 angular.module('starter.controllers')
 
-    .controller('loginCtrl', function($scope, $ionicPopup, $timeout, $window, $location,$http, $cordovaDevice,$ionicPlatform,$cordovaSQLite) {
+    .controller('loginCtrl', function($scope, $ionicPopup, $timeout, $window, $location,$http, $cordovaDevice,$ionicPlatform,$cordovaSQLite,CartData) {
         $scope.loginData = {};
         $scope.loginData.deviceId = window.localStorage['MeherDeviceId'];
         $scope.loginData.opt = null;
@@ -76,16 +76,15 @@ angular.module('starter.controllers')
 
 
         $scope.makeUser = function () {
-            $scope.orderPost["customer"]["mobile"] = window.localStorage['MeherMobile'];
+             $scope.orderPost["customer"]["mobile"] = window.localStorage['MeherMobile'];
             $http({
                 url: 'http://getmeher.com:3000/orders',
                 method: "POST",
                 data: $scope.orderPost
             }).then(function (response) {
                     // success
-                    //alert("orderSentToServe");
-                    console.log(response);
-                    $location.url("/app/postorder");
+                   CartData.emptyCart();
+                   $location.url("/app/postorder/"+response.data._id);
                 },
                 function (response) { // optional
                     // failed

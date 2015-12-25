@@ -8,7 +8,7 @@ angular.module('starter.controllers')
                 .shareViaWhatsApp("hi", null, 'https://play.google.com/store/apps/details?id=com.meherapp.meher')
                 .then(function(result) {
                     // Success!
-                    alert("done")
+                    alert("Thanks for sharing!")
                 }, function(err) {
                     // An error occurred. Show a message to the user
                     alert(err)

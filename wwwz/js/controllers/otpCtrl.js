@@ -78,6 +78,6 @@ angular.module('starter.controllers')
         var deviceID =  (window.localStorage['deviceID']);
         var mobile = $scope.currentMobile;
         $scope.execute(deviceID,mobile,type);
-        $location.url("/app/activeorders");
+        $location.url("/app/actiorders");
       };
     });

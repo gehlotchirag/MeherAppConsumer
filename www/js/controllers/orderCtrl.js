@@ -167,24 +167,25 @@ angular.module('starter.controllers')
                 $scope.showAlert();
             }
             else{
-                if (originalAddress !== $scope.formData.userAddress)
-                {
-                    if ($scope.saveToDb ==true)
-                        $scope.insertDB();
-                    else
-                        $scope.updateDB();
-                }
+
                 $scope.makeOrder();
-                if(window.localStorage.getItem("MeherUser") !== undefined && window.localStorage.getItem("MeherMobile") !== undefined && window.localStorage.getItem("MeherMobile") !== null && window.localStorage.getItem("MeherMobile") !== "null" && window.localStorage.getItem("MeherMobile") !== "undefined" ){
-                    $scope.makeUser();
-                }
-                else{
+                //if(window.localStorage.getItem("MeherUser") !== undefined && window.localStorage.getItem("MeherMobile") !== undefined && window.localStorage.getItem("MeherMobile") !== null && window.localStorage.getItem("MeherMobile") !== "null" && window.localStorage.getItem("MeherMobile") !== "undefined" ){
+                //    $scope.makeUser();
+                //}
+                //else{
                     var query = "SELECT * FROM Meher_user WHERE deviceId = ?";
                     $cordovaSQLite.execute(db, query, [window.localStorage['MeherDeviceId']]).then(function (result) {
                         if (result.rows.length > 0) {
                             window.localStorage['MeherUser'] = JSON.stringify(result.rows.item(0));
                             window.localStorage['MeherMobile'] = JSON.stringify(result.rows.item(0).mobile);
                             if(window.localStorage.getItem("MeherUser") !== undefined && window.localStorage.getItem("MeherMobile") !== undefined && window.localStorage.getItem("MeherMobile") !== null && window.localStorage.getItem("MeherMobile") !== "null" && window.localStorage.getItem("MeherMobile") !== "undefined" ){
+                              if (originalAddress !== $scope.formData.userAddress)
+                              {
+                                if ($scope.saveToDb ==true)
+                                  $scope.insertDB();
+                                else
+                                  $scope.updateDB();
+                              }
                                 $scope.makeUser();
                             }
                             else {
@@ -197,7 +198,8 @@ angular.module('starter.controllers')
                     }, function (error) {
                         console.error(error);
                     });
-                }
+
+                //}
             }
         };
 
@@ -209,7 +211,9 @@ angular.module('starter.controllers')
         };
 
         $scope.makeUser = function () {
-            $scope.orderPost["customer"]["mobile"] = window.localStorage['MeherMobile'];
+          //alert("making order")
+
+          $scope.orderPost["customer"]["mobile"] = window.localStorage['MeherMobile'];
             $http({
                 url: 'http://getmeher.com:3000/orders',
                 method: "POST",
@@ -217,13 +221,22 @@ angular.module('starter.controllers')
             }).then(function (response) {
                     // success
                     //alert("orderSentToServe");
-                    console.log(response);
-                    CartData.emptyCart();
-                    $location.url("/app/postorder");
+                  //alert("orderSentToServe");
+                  //alert(JSON.stringify(response.data._id));
+                  console.log(response);
+                  console.log("*********** $$$$$$$$$$$$$$$$$$$$ *************** $$$$$$$$$$$$$$$$$$$$ ********");
+                  console.log("*********** $$$$$$$$$$$$$$$$$$$$ *************** $$$$$$$$$$$$$$$$$$$$ ********");
+                  CartData.emptyCart();
+                  console.log("cart empty");
+                  //alert("cart empty");
+                  //alert(JSON.stringify(CartData.getCart));
+                  $location.url("/app/postorder/"+response.data._id);
+                  console.log("*********** XXXXXXXXXXXX *************** XXXXXXXXXXXX ********");
+
                 },
                 function (response) { // optional
                     // failed
-                    alert(JSON.stringify(response));
+                    //alert(JSON.stringify(response));
                     console.log(response);
                 });
             $scope.cartMsg = $scope.cartMsg + '\n' + "Ordered Using Meher App - https://goo.gl/cxqKEc";

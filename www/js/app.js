@@ -23,13 +23,13 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
           StatusBar.styleDefault();
         }
         document.addEventListener("resume", function() {
-          if($state.current.name == "app.storelist" || $state.current.name == "app.postorder")
+          if($state.current.name == "app.storelist" || $state.current.name == "app.postorder" || $state.current.name == "app.postorder")
           {
             $state.go($state.current, {}, {reload: true});
           }
 
         }, false);
-        db = $cordovaSQLite.openDB("meheruserc.db");
+        db = $cordovaSQLite.openDB("meheruserd.db");
         $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS Meher_user (deviceId text, mobile integer,addLine1 text,addLine2 text)");
       });
     })
@@ -65,6 +65,7 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
 
           .state('app.postorder', {
             url: '/postorder/:orderId',
+            cache: false,
             views: {
               'menuContent': {
                 templateUrl: 'templates/post-order.html',
@@ -175,6 +176,7 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
       //});
 
       // if none of the above states are matched, use this as the fallback
+      //$urlRouterProvider.otherwise('/app/postorder/567d2a774f51030747c496cf');
       $urlRouterProvider.otherwise('/app/categories');
       //$urlRouterProvider.otherwise('/app/login');
     });

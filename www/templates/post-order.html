@@ -15,11 +15,11 @@
           <li class="complete">
             <a ><i class="ion-ios-compose" style="margin-left: 2px;"></i></a>
           </li>
-          <li ng-class="{complete:(order.orderStatus== 'accepted') || (order.orderStatus== 'ontheway') ||(order.orderStatus== 'delivered')}"  >
+          <li ng-class="{complete:(order.orderStatus== 'accepted') || (order.orderStatus== 'deliverySent') ||(order.orderStatus== 'delivered')}"  >
             <a ><i class="ion-clipboard"></i></a>
             <!--<li class="complete"><a >2</a>-->
           </li>
-          <li ng-class="{complete:(order.orderStatus== 'ontheway') ||(order.orderStatus== 'delivered')}">
+          <li ng-class="{complete:(order.orderStatus== 'deliverySent') ||(order.orderStatus== 'delivered')}">
             <a ><i class="ion-android-bicycle"></i></a>
           </li>
           <li ng-class="{complete:order.orderStatus== 'delivered'}">
@@ -51,7 +51,8 @@
       </div>
 
       <div class="row item item-divider">
-        <span class="col text-center">Order FeedBack {{timeDiff}} minutes</span>
+        <span class="col text-center">Order FeedBack <span ng-if="(30 - timeDiff)> 1">after <i class="ion-clock" style="font-size:15px;"></i>
+{{(30 - timeDiff)}} mins</span></span>
       </div>
       <div class="backdrop visible active" style="top:50%; height: 50%" ng-if='timeDiff < 30'></div>
       <form>

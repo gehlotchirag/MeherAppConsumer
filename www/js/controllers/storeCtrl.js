@@ -75,10 +75,6 @@ angular.module('starter.controllers')
 
         };
 
-        $scope.untick = function(obj) {
-            alert("lets utick first")
-        };
-
         $scope.CallTel = function(tel) {
         window.open('tel:'+tel)
       };

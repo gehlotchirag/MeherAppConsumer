@@ -34,7 +34,7 @@ angular.module('starter.controllers')
             console.log(dateNow);
             var dateCreated = new Date($scope.order.created);
             console.log(dateCreated);
-            $scope.timeDiff=Math.ceil(new Date(dateNow.getTime() - dateCreated.getTime())/ (1000 * 3600 ));
+            $scope.timeDiff=Math.ceil(new Date(dateNow.getTime() - dateCreated.getTime())/ (1000 * 60 ));
             console.log($scope.timeDiff);
         }
 

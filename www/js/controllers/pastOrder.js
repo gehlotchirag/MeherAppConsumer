@@ -2,11 +2,12 @@ angular.module('starter.controllers')
 
     .controller('pastOrderCtrl', function($scope,$http,$location) {
         //if(true){
-        if(window.localStorage['MeherMobile']){
+      $scope.order=null;
+        if(window.localStorage['MeherMobile'] !== null){
             $http({
                 method: 'GET',
                 //url: 'http://www.getmeher.com:3000/orders',
-                url: 'http://www.getmeher.com:3000/orders/user/:'+window.localStorage['MeherMobile'],
+                url: 'http://www.getmeher.com:3000/orders/user/'+window.localStorage['MeherMobile'],
                 data:$scope.feedbackData,
             }).then(function successCallback(response) {
                 $scope.orders=response.data;

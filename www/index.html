@@ -105,12 +105,12 @@
     <span id="cart-badge" class="badge badge-assertive">{{cartList.length}}</span>
     </a>
     </div>
-    <h1 class="title" ion-pull-up-trigger>Tap here</h1>
+    <h1 class="title" ion-pull-up-trigger>Cart</h1>
     <div class="buttons">
-    <a class="button icon-right ion-arrow-right-c button-positive" href="#/app/order" ng-if="currentPath  !== '/app/order'">Order Now</a>
+    <a class="button icon-right ion-arrow-right-c button-positive" href="#/app/order" ng-if="currentPath  !== '/app/order' && currentPath  !== '/app/login' ">Order </a>
     </div>
     <div class="buttons pull-right">
-    <button class="button icon-right ion-arrow-right-c button-balanced" ng-click="composeSMS()" ng-if="currentPath  === '/app/order'">Place Order</button>
+    <!--<button class="button icon-right ion-arrow-right-c button-balanced" ng-click="retriveLocal()" ng-if="currentPath  === '/app/order'">Place Order</button>-->
     </div>
     </ion-pull-up-bar>
     <ion-pull-up-content scroll="false">
