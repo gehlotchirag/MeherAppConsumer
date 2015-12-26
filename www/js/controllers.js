@@ -1,116 +1,119 @@
 angular.module('starter.controllers', [])
 
-    .controller('LoadCtrl', function($scope, $cordovaPush, $cordovaDialogs, $cordovaMedia, $cordovaToast, ionPlatform, $http,CartData,$location,$cordovaDevice,$state,$rootScope,$ionicPopup) {$scope.notifications = [];
+    .controller('LoadCtrl', function($scope, $cordovaPush, $cordovaDialogs, $cordovaMedia, $cordovaToast, ionPlatform, $http,CartData,$location,$cordovaDevice,$state,$rootScope,$ionicPopup,$ionicHistory) {
+      $scope.notifications = [];
       $scope.cartList=CartData.getCart();
       $scope.grandTotal;
-        $scope.requestDelete = false;
-        window.localStorage['MeherDeviceId'];
+      $scope.requestDelete = false;
+      window.localStorage['MeherDeviceId'];
 
-        $scope.cartList=CartData.getCart();
-        $scope.cartItems = CartData.getCart();
-        $scope.delete=function(){
-            alert('you have delete item')
-        }
-        $scope.showConfirm = function(productItem) {
+      $scope.cartList=CartData.getCart();
+      $scope.cartItems = CartData.getCart();
+      $scope.delete=function(){
+        alert('you have delete item')
+      }
+      $scope.showConfirm = function(productItem) {
 
-            var confirmPopup = $ionicPopup.confirm({
+        var confirmPopup = $ionicPopup.confirm({
 
-                title: 'Conformation',
+          title: 'Conformation',
 
-                template: 'are you sure you want to delete',
+          template: 'are you sure you want to delete',
 
-            });
-
-            //alert(JSON.stringify(productItem));
-            confirmPopup.then(function(res) {
-
-                if (res) {
-                    var index = $scope.cartList.indexOf(productItem);
-                    if (index != -1) {
-                        $scope.cartList.splice(index, 1);
-                        //CartData.removeCart($scope.productItem);
-                    }
-
-
-                    $scope.$broadcast('someEvent', productItem);
-
-                    console.log('You clicked on "OK" button');
-
-                } else {
-
-                    console.log('You clicked on "Cancel" button');
-
-                }
-
-            });
-
-        };
-
-
-        $scope.increaseQuantity = function (productItem) {
-            if (productItem.quantity > 1) {
-                productItem.price = productItem.price + (productItem.price / productItem.quantity);
-                productItem.quantity = productItem.quantity + 1;
-            }
-            else {
-                productItem.quantity = productItem.quantity + 1;
-                productItem.price = productItem.price * productItem.quantity;
-            }
-            $scope.updateCart(productItem)
-        };
-
-        $scope.decreaseQuantity = function (productItem) {
-            if (productItem.quantity > 1) {
-                productItem.price = productItem.price - (productItem.price / productItem.quantity);
-                productItem.quantity = productItem.quantity - 1;
-                $scope.updateCart(productItem)
-            }
-            else{
-                $scope.showConfirm(productItem);
-            }
-        };
-
-        $scope.updateCart = function (productItem) {
-            $scope.cartItems = $scope.cartItems.filter(function (obj) {
-                //console.log(obj);
-                if (obj.name == productItem.name) {
-                    console.log(obj);
-                    obj.quantity = productItem.quantity;
-                    obj.price = productItem.price;
-                }
-                return obj;
-            });
-            console.log($scope.cartItems);
-            CartData.copyCart($scope.cartItems);
-            $scope.cartTotal = $scope.getCartTotal();
-        };
-
-        $scope.$watchCollection('cartItems', function (newValue, oldValue) {
-            if (newValue !== oldValue) {
-                console.log("watch triggered !!");
-                CartData.setCart(newValue);
-                $scope.cartTotal = $scope.getCartTotal();
-            }
         });
 
+        //alert(JSON.stringify(productItem));
+        confirmPopup.then(function(res) {
+
+          if (res) {
+
+            var index = $scope.cartList.indexOf(productItem);
+            if (index != -1) {
+              $scope.cartList.splice(index, 1);
+
+              //CartData.removeCart($scope.productItem);
+            }
 
 
+            $scope.$broadcast('someEvent', productItem);
 
-        $scope.getCartTotal = function () {
-            var total = 0;
-            console.log($scope.cartItems);
-            //CartData.setCart($scope.cartItems)
-            angular.forEach($scope.cartItems, function (item) {
-                console.log(item);
-                if ($scope.cartItems.length > 0 && item.price)
-                    total = total + (item.price);
-                else
-                    total = 0
-            })
-            return total;
-        };
+            console.log('You clicked on "OK" button');
 
+          } else {
+
+            console.log('You clicked on "Cancel" button');
+
+          }
+
+        });
+
+      };
+
+
+      $scope.increaseQuantity = function (productItem) {
+        if (productItem.quantity > 1) {
+          productItem.price = productItem.price + (productItem.price / productItem.quantity);
+          productItem.quantity = productItem.quantity + 1;
+        }
+        else {
+          productItem.quantity = productItem.quantity + 1;
+          productItem.price = productItem.price * productItem.quantity;
+        }
+        $scope.updateCart(productItem)
+      };
+
+      $scope.decreaseQuantity = function (productItem) {
+        if (productItem.quantity > 1) {
+          productItem.price = productItem.price - (productItem.price / productItem.quantity);
+          productItem.quantity = productItem.quantity - 1;
+          $scope.updateCart(productItem)
+        }
+        else{
+          $scope.showConfirm(productItem);
+        }
+      };
+
+      $scope.updateCart = function (productItem) {
+        $scope.cartItems = $scope.cartItems.filter(function (obj) {
+          //console.log(obj);
+          if (obj.name == productItem.name) {
+            console.log(obj);
+            obj.quantity = productItem.quantity;
+            obj.price = productItem.price;
+          }
+          return obj;
+        });
+        console.log($scope.cartItems);
+        CartData.copyCart($scope.cartItems);
         $scope.cartTotal = $scope.getCartTotal();
+      };
+
+      $scope.$watchCollection('cartItems', function (newValue, oldValue) {
+        if (newValue !== oldValue) {
+          console.log("watch triggered !!");
+          CartData.setCart(newValue);
+          $scope.cartTotal = $scope.getCartTotal();
+        }
+      });
+
+
+
+
+      $scope.getCartTotal = function () {
+        var total = 0;
+        console.log($scope.cartItems);
+        //CartData.setCart($scope.cartItems)
+        angular.forEach($scope.cartItems, function (item) {
+          console.log(item);
+          if ($scope.cartItems.length > 0 && item.price)
+            total = total + (item.price);
+          else
+            total = 0
+        })
+        return total;
+      };
+
+      $scope.cartTotal = $scope.getCartTotal();
 
 
 
@@ -125,19 +128,66 @@ angular.module('starter.controllers', [])
 
 
 
-        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
-          //used for menu buttons based on current page logics
+      $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+        //used for menu buttons based on current page logics
         $scope.currentPage = toState.url;
       });
 
       $scope.takeTODelete = function() {
-          $scope.requestDelete = !$scope.requestDelete;
+        $scope.requestDelete = !$scope.requestDelete;
         $rootScope.$emit("CallDelete", {});
       }
+      var alertDone = true;
 
       $scope.$on('$locationChangeSuccess', function(event) {
-        console.log($location.path())
         $scope.currentPath = $location.path();
+
+      });
+
+
+      $rootScope.$on('$stateChangeStart', function (ev, to, toParams, from, fromParams) {
+        console.log( $location.path());
+        console.log(ev);
+        console.log(to);
+        console.log(toParams);
+        console.log(from);
+        console.log(fromParams);
+        console.log($scope.currentPath)
+
+        if($scope.cartList.length && (to.name=='app.storelist')){
+          //$ionicHistory.goBack();
+          ev.defaultPrevented = true;
+          console.log(ev);
+          console.log($scope.currentPath)
+          event.preventDefault();
+          $ionicPopup.confirm({
+                title:"Cart not empty",
+                template:"Do you want to discard your cart?",
+                cancelText: 'Cancel', // String (default: 'Cancel'). The text of the Cancel button.
+                cancelType: '', // String (default: 'button-default'). The type of the Cancel button.
+                okText: 'Discard', // String (default: 'OK'). The text of the OK button.
+                okType: 'button-assertive', // String (default: 'button-positive'). The type of the OK button.
+
+
+              })
+              .then(function(res){
+                if(res){
+                  var currentCart= CartData.getCart();
+                  console.log(currentCart.length);
+                  for(item=0;item<currentCart.length;item++){
+                    $scope.$broadcast("unTick",currentCart[item]);
+                  }
+
+                  CartData.emptyCart();
+
+                  $location.url("app/categories/"+toParams);
+
+                }
+
+              })
+        }
+
+
       });
 
       $scope.composeSMS = function() {
@@ -287,11 +337,11 @@ angular.module('starter.controllers', [])
                 //alert("Token stored, device is successfully subscribed to receive push notifications.");
               })
               .error(function (data, status) {
-                //alert("no not done")
-                console.log("Error storing device token." + data + " " + status)
-                //alert("Error storing device token." + data + " " + status)
-              }
-          );
+                    //alert("no not done")
+                    console.log("Error storing device token." + data + " " + status)
+                    //alert("Error storing device token." + data + " " + status)
+                  }
+              );
         };
 
 // onError Callback receives a PositionError object
@@ -312,10 +362,10 @@ angular.module('starter.controllers', [])
               //alert("Token removed, device is successfully unsubscribed and will not receive push notifications.");
             })
             .error(function (data, status) {
-              console.log("Error removing device token." + data + " " + status)
-              //alert("Error removing device token." + data + " " + status)
-            }
-        );
+                  console.log("Error removing device token." + data + " " + status)
+                  //alert("Error removing device token." + data + " " + status)
+                }
+            );
       }
 
       // Unregister - Unregister your device token from APNS or GCM
@@ -384,4 +434,3 @@ angular.module('starter.controllers', [])
         }, 1000);
       };
     })
-

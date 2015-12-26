@@ -19,6 +19,7 @@ angular.module('starter.controllers')
 
         $scope.lookupLocalDB = function() {
             var query = "SELECT * FROM Meher_user WHERE addLine2 = ? ";
+          //console.log(db);
             $cordovaSQLite.execute(db, query,[$scope.formData.userSublocality]).then(function (result) {
                 if(result.rows.length > 0) {
                     window.localStorage['MeherUser'] = JSON.stringify(result.rows.item(0));

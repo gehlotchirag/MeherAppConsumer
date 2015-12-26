@@ -88,7 +88,7 @@ angular.module('starter.controllers')
                 },
                 function (response) { // optional
                     // failed
-                    alert(JSON.stringify(response));
+                    //alert(JSON.stringify(response));
                     console.log(response);
                 });
             $scope.cartMsg = $scope.cartMsg + '\n' + "Ordered Using Meher App - https://goo.gl/cxqKEc";

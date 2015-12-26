@@ -1,6 +1,3 @@
-/**
- * Created by chirag on 18/09/15.
- */
 angular.module('starter.controllers')
 
     .controller('storeCtrl', function($scope, $http, $stateParams,CartData,StoreData,$ionicLoading,$ionicSlideBoxDelegate,$location,$ionicFilterBar) {
@@ -13,69 +10,79 @@ angular.module('starter.controllers')
       $scope.storeCategory = window.category;
       $scope.productCatalog = window.category.productCategory;
 
-        var temp;
+      var temp;
 
 
-        $scope.$on("$ionicView.enter", function () {
-            $scope.checkExisting();
-        });
+      $scope.$on("$ionicView.enter", function () {
+        $scope.checkExisting();
+      });
 
-        $scope.slideHasChanged = function (index){
-            $scope.checkExisting();
-        };
+      $scope.slideHasChanged = function (index){
+        $scope.checkExisting();
+      };
 
-        $scope.CallTel = function(tel) {
-            window.open('tel:'+tel)
-        };
+      $scope.CallTel = function(tel) {
+        window.open('tel:'+tel)
+      };
+      $scope.$on("unTick", function(event,productItem)
+
+      {
+        // alert(JSON.stringify(productItem.name));
+        //$scope.checkExisting();
+        console.log("In $on ");
+        $scope.practice(productItem);
 
 
-        $scope.$on('someEvent', function(event,productItem)
-
-        {
-            // alert(JSON.stringify(productItem.name));
-            //$scope.checkExisting();
-            $scope.practice(productItem);
+      })
 
 
-        });
+      $scope.$on('someEvent', function(event,productItem)
 
-        $scope.practice=function(productItem){
-            $scope.currentObj =productItem ;
-            var untickDone = false;
-            console.log( '************');
-            console.log( $scope.currentObj);
-            var existingItems = $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products;
+      {
+        // alert(JSON.stringify(productItem.name));
+        //$scope.checkExisting();
+        $scope.practice(productItem);
+
+
+      });
+
+      $scope.practice=function(productItem){
+        $scope.currentObj =productItem ;
+        var untickDone = false;
+        console.log( '************');
+        console.log( $scope.currentObj);
+        var existingItems = $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products;
+        var i;
+        for (i = 0; i < existingItems.length; i++) {
+          if ($scope.currentObj.name == existingItems[i].name) {
+            //alert("matched")
+            console.log($scope.currentObj);
+            $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products[i].ordernow = false;
+            untickDone = true;
+            break;
+          }
+        }
+
+        if(!untickDone) {
+          var j;
+          for (j = 0; j < $scope.productCatalog.length; j++) {
+            var existingItems = $scope.productCatalog[j].products;
             var i;
             for (i = 0; i < existingItems.length; i++) {
-                if ($scope.currentObj.name == existingItems[i].name) {
-                    //alert("matched")
-                    console.log($scope.currentObj);
-                    $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products[i].ordernow = false;
-                    untickDone = true;
-                    break;
-                }
+              if ($scope.currentObj.name == existingItems[i].name) {
+                //alert("matched")
+                console.log($scope.currentObj)
+                $scope.productCatalog[j].products[i].ordernow = false;
+                break;
+              }
             }
+          }
 
-            if(!untickDone) {
-                var j;
-                for (j = 0; j < $scope.productCatalog.length; j++) {
-                    var existingItems = $scope.productCatalog[j].products;
-                    var i;
-                    for (i = 0; i < existingItems.length; i++) {
-                        if ($scope.currentObj.name == existingItems[i].name) {
-                            //alert("matched")
-                            console.log($scope.currentObj)
-                            $scope.productCatalog[j].products[i].ordernow = false;
-                            break;
-                        }
-                    }
-                }
+        }
 
-            }
+      };
 
-        };
-
-        $scope.CallTel = function(tel) {
+      $scope.CallTel = function(tel) {
         window.open('tel:'+tel)
       };
 
@@ -125,7 +132,10 @@ angular.module('starter.controllers')
         else {
           for (var i in $scope.cartItems) {
             if ($scope.cartItems [i] === productItem) {
-              $scope.cartItems.splice(i, 1);
+              //$scope.cartItems.splice(i, 1);
+              console.log(productItem);
+              $scope.addToCart(productItem,false,i);
+              console.log(productItem);
             }
           }
           CartData.setCart($scope.cartItems);
@@ -190,17 +200,17 @@ angular.module('starter.controllers')
             productItem.price = productItem.price / productItem.quantity;
             productItem.quantity =1;
           }
-            //if (index != -1) {
-            //    $scope.cartItems.splice(index, 1);
-            //    //CartData.removeCart(productItem);
-            //}
+          //if (index != -1) {
+          //    $scope.cartItems.splice(index, 1);
+          //    //CartData.removeCart(productItem);
+          //}
 
           for (var i in $scope.cartItems) {
-              console.log(productItem);
-              console.log($scope.cartItems[i]);
+            console.log(productItem);
+            console.log($scope.cartItems[i]);
 
-              if ($scope.cartItems[i]._id === productItem._id) {
-                  console.log("matched")
+            if ($scope.cartItems[i]._id === productItem._id) {
+              console.log("matched")
               $scope.cartItems.splice(i, 1);
             }
           }
@@ -224,27 +234,27 @@ angular.module('starter.controllers')
       $scope.loadMoreProducts = function() {
 
         if($scope.productCatalog[$ionicSlideBoxDelegate.selected()])
-        if(once == true && $scope.productCatalog[$ionicSlideBoxDelegate.selected()].loadMore == true) {
-          once=false;
-          var index = $ionicSlideBoxDelegate.selected();
-          var productCategory = $scope.productCatalog[index].link;
-          var pageNumber = $scope.productCatalog[index].pageNumber
-          $scope.getProducts(productCategory, pageNumber).then(function (response) {
-            if (response.data.length >0 ){
-              angular.forEach(response.data, function (value, key) {
-                value.ordernow = false;
-                  console.log(value);
-                $scope.productCatalog[index].products.push(value);
-              });
-              $scope.productCatalog[index].pageNumber++;
-            }
-            else{
-              $scope.productCatalog[index].loadMore = false;
-            }
-            $scope.$broadcast('scroll.infiniteScrollComplete');
-            once = true;
-          })
-        }
+          if(once == true && $scope.productCatalog[$ionicSlideBoxDelegate.selected()].loadMore == true) {
+            once=false;
+            var index = $ionicSlideBoxDelegate.selected();
+            var productCategory = $scope.productCatalog[index].link;
+            var pageNumber = $scope.productCatalog[index].pageNumber
+            $scope.getProducts(productCategory, pageNumber).then(function (response) {
+              if (response.data.length >0 ){
+                angular.forEach(response.data, function (value, key) {
+                  value.ordernow = false;
+
+                  $scope.productCatalog[index].products.push(value);
+                });
+                $scope.productCatalog[index].pageNumber++;
+              }
+              else{
+                $scope.productCatalog[index].loadMore = false;
+              }
+              $scope.$broadcast('scroll.infiniteScrollComplete');
+              once = true;
+            })
+          }
       };
 
       $scope.$on('$stateChangeSuccess', function() {
@@ -255,43 +265,43 @@ angular.module('starter.controllers')
       $scope.getProducts = function(productCategory,pageNumber) {
         return $http.get('http://getmeher.com:3000/'+$scope.productCatalog[0].link+'/'+productCategory+'/'+pageNumber)
       };
-        var filterBarInstance;
-        $scope.showFilterBar = function () {
-            filterBarInstance = $ionicFilterBar.show({
-                items: $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products,
+      var filterBarInstance;
+      $scope.showFilterBar = function () {
+        filterBarInstance = $ionicFilterBar.show({
+          items: $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products,
 
-                cancel: function () {
-                    console.log(temp);
-                    $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products =temp;
-                 },
+          cancel: function () {
+            console.log(temp);
+            $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products =temp;
+          },
 
-                update: function (filteredItems, filterText) {
-                    searchOn = true;
-                    console.log("%%%%%%%%%")
-                    console.log($scope.productCatalog[$ionicSlideBoxDelegate.selected()].products)
-                    if(temp == null)
-                    {
-                        temp = $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products;
+          update: function (filteredItems, filterText) {
+            searchOn = true;
+            console.log("%%%%%%%%%")
+            console.log($scope.productCatalog[$ionicSlideBoxDelegate.selected()].products)
+            if(temp == null)
+            {
+              temp = $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products;
 
-                    }
-                    $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products = "";
-                    if (filterText) {
-                        if (filterText.length > 2) {
-                            console.log(filterText);
-                            $http.get('http://getmeher.com:3000/'+$scope.productCatalog[0].link+'-'+'search'+'/'+filterText)
-                                .then(function successCallback(response) {
-                                    console.log($scope.productCatalog[$ionicSlideBoxDelegate.selected()].products);
-                                    $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products = response.data;
-                                    console.log($scope.productCatalog[$ionicSlideBoxDelegate.selected()].products);
-                                }, function errorCallback(response) {
-                                });
-                        }
+            }
+            $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products = "";
+            if (filterText) {
+              if (filterText.length > 2) {
+                console.log(filterText);
+                $http.get('http://getmeher.com:3000/'+$scope.productCatalog[0].link+'-'+'search'+'/'+filterText)
+                    .then(function successCallback(response) {
+                      console.log($scope.productCatalog[$ionicSlideBoxDelegate.selected()].products);
+                      $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products = response.data;
+                      console.log($scope.productCatalog[$ionicSlideBoxDelegate.selected()].products);
+                    }, function errorCallback(response) {
+                    });
+              }
 
-                    }
+            }
 
 
-                }
-            });
-        };
+          }
+        });
+      };
 
     });
