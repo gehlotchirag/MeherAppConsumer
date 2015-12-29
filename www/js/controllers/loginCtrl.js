@@ -109,6 +109,7 @@ angular.module('starter.controllers')
                 $scope.consumerData.mobile = user.mobile;
                 $scope.consumerData.addLine1 = user.addLine1;
                 $scope.consumerData.addLine2 = user.addLine2;
+              $scope.consumerData.loc={};
                 $scope.consumerData.loc.coordinates = [window.userloc.coords.latitude,window.userloc.coords.longitude];
                 $scope.createConsumer($scope.consumerData);
               if ($scope.orderPost){
@@ -119,15 +120,16 @@ angular.module('starter.controllers')
             });
         };
       $scope.createConsumer = function(consumerData){
+        //alert(JSON.stringify(consumerData));
         $http({
           url: 'http://getmeher.com:3000/consumers',
           method: "POST",
           data: consumerData
         }).then(function (response) {
-            console.log("Consumer Created!")
+            //alert("Consumer Created!")
         })
         
-      }
+      };
 
         $scope.verifiedOtp = function() {
             if ($scope.opt == $scope.loginData.opt) {

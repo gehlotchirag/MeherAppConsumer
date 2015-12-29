@@ -3,7 +3,7 @@ angular.module('starter.controllers')
     .controller('pastOrderCtrl', function($scope,$http,$location) {
         //if(true){
       $scope.order=null;
-        if(window.localStorage['MeherMobile'] !== null){
+        if(window.localStorage['MeherMobile'] !== null || window.localStorage['MeherMobile'] !== "null" || window.localStorage['MeherMobile'] !== undefined || window.localStorage['MeherMobile'] !== "undefined" ){
             $http({
                 method: 'GET',
                 //url: 'http://www.getmeher.com:3000/orders',
