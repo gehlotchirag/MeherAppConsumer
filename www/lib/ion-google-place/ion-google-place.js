@@ -92,7 +92,7 @@ angular.module('ion-google-place', [])
               };
 
 
-              scope.setCurrentLocation = function(){
+              scope.setCurrentLocation = function() {
                 cordova.plugins.diagnostic.isLocationEnabled(function(enabled){
                   if (enabled){
                     window.subLocality = null;
@@ -119,19 +119,29 @@ angular.module('ion-google-place', [])
                       cordova.plugins.diagnostic.switchToLocationSettings(function(){
                         scope.setCurrentLocation();
                       }, function(error){
-                        alert("Error Occurred !"+error)
+                        alert("Error Occurred !")
                       });
                     }
                     else{
                       cordova.plugins.diagnostic.switchToSettings(function(){
                         scope.setCurrentLocation();
                       }, function(error){
-                        alert("Error Occurred !" + error)
+                        alert("Error Occurred !")
                       });
                     }
                   }
                 }, function(error){
-                  alert("Error Occurred !" +error)
+                  //alert("Error here Occurred !");
+                  elseLocation()
+                      .then(reverseGeocoding)
+                     .then(function(location) {
+                             ngModel.$setViewValue(location);
+                             element.attr('value', location.formatted_address);
+                             ngModel.$render();
+                             el.element.css('display', 'none');
+                             $ionicBackdrop.release();
+                     });
+
                 });
                 //alert("got here !")
                 //window.subLocality = null;
@@ -228,13 +238,14 @@ angular.module('ion-google-place', [])
 
             function elseLocation() {
               return $q(function (resolve, reject) {
-                    navigator.geolocation.getCurrentPosition(function (position) {
-                    alert(position);
-                    resolve(position)
-                  }, function (e) {
-                    alert(e);
-                    reject(error);
-                  }, {});
+                navigator.geolocation.getCurrentPosition(function (position) {
+                  //alert(JSON.stringify(position));
+                  resolve(position)
+                }, function (e) {
+                  //alert(JSON.stringify(e));
+                  //alert(e);
+                  reject(error);
+                }, {});
               })}
 
             function getLocation() {
@@ -254,11 +265,13 @@ angular.module('ion-google-place', [])
             }
 
             function reverseGeocoding(location) {
+              window.userloc = location;
               return $q(function (resolve, reject) {
                 var latlng = {
                   lat: location.coords.latitude,
                   lng: location.coords.longitude
                 };
+                //alert(JSON.stringify(latlng))
                 geocoder.geocode({'location': latlng}, function (results, status) {
                   if (status == google.maps.GeocoderStatus.OK) {
                     if (results[1]) {

@@ -7,6 +7,7 @@ angular.module('starter.controllers')
         $scope.loginData = {};
         $scope.loginData.deviceId = window.localStorage['MeherDeviceId'];
         $scope.loginData.opt = null;
+        $scope.consumerData={};
 
         if (typeof window.localStorage['orderPost'] !== "undefined") {
             $scope.orderPost = JSON.parse(window.localStorage['orderPost']);
@@ -105,13 +106,28 @@ angular.module('starter.controllers')
                 console.log("INSERT ID -> " + res.insertId);
                 $scope.orderPost = JSON.parse(window.localStorage['orderPost']);
                 $scope.cartMsg = JSON.parse(window.localStorage['currentOrder']);
-                if ($scope.orderPost){
+                $scope.consumerData.mobile = user.mobile;
+                $scope.consumerData.addLine1 = user.addLine1;
+                $scope.consumerData.addLine2 = user.addLine2;
+                $scope.consumerData.loc.coordinates = [window.userloc.coords.latitude,window.userloc.coords.longitude];
+                $scope.createConsumer($scope.consumerData);
+              if ($scope.orderPost){
                     $scope.makeUser();
                 }
             }, function (err) {
                 console.error(err);
             });
         };
+      $scope.createConsumer = function(consumerData){
+        $http({
+          url: 'http://getmeher.com:3000/consumers',
+          method: "POST",
+          data: consumerData
+        }).then(function (response) {
+            console.log("Consumer Created!")
+        })
+        
+      }
 
         $scope.verifiedOtp = function() {
             if ($scope.opt == $scope.loginData.opt) {

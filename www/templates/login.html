@@ -22,10 +22,30 @@
                         <input type="tel"  placeholder="Enter 10 digit mobile number" ng-model="loginData.mobile">
                     </label>
 
+
+                    <li class="item item-toggle">
+                        Reffered by
+                        <label class="toggle toggle-positive">
+                            <input type="checkbox" ng-model="loginData.refFlag">
+                            <div class="track">
+                                <div class="handle"></div>
+                            </div>
+                        </label>
+                    </li>
+
+                    <label class="item item-input" ng-show="loginData.refFlag">
+                        <span class="input-label">Refferal Number +91</span>
+                        <input type="tel"  placeholder="Enter 10 digit mobile number" ng-model="consumerData.referedBy">
+                    </label>
+
+
                     <label class="item">
                         <button class="button button-block button-balanced" ng-click="sendOPT()" type="submit">Login</button>
                     </label>
                 </div>
+
+
+
                     </form>
             </div>
 
