@@ -22,6 +22,11 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
           // org.apache.cordova.statusbar required
           StatusBar.styleDefault();
         }
+
+        window.tapstream.create('meher', 'bPpIwntUQbSNX77bh402YA', {
+          idfa: '<IDFA goes here>'
+        });
+
         document.addEventListener("resume", function() {
           if($state.current.name == "app.storelist" || $state.current.name == "app.postorder" || $state.current.name == "app.postorder")
           {
