@@ -57,7 +57,7 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
       $ionicFilterBarConfigProvider.clear('ion-close');
       $ionicFilterBarConfigProvider.search('ion-search');
       $ionicFilterBarConfigProvider.backdrop(false);
-      $ionicFilterBarConfigProvider.transition('vertical');
+      $ionicFilterBarConfigProvider.transition('horizontal');
       $ionicFilterBarConfigProvider.placeholder('Search Products');
 
       $stateProvider

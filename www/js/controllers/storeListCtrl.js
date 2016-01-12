@@ -27,16 +27,16 @@ angular.module('starter.controllers')
         console.log("fetchStoreList called" + $scope.pageNumber);
         $scope.pageNumber = $scope.pageNumber+1;
         $http.get('http://getmeher.com:3000/'+window.category.link+'/near/'+lng+'/'+lat+'/'+$scope.pageNumber).
-            then(function (response) {
-              if(response.data.length > 0) {
-                $scope.storeList = response.data;
-                $scope.storeMsg = null;
-              }
-              else
-                $scope.storeMsg = "Currently not serving in your area !!";
-            }, function (response) {
-              $scope.storeMsg = "Error retrieving data";
-            });
+        then(function (response) {
+          if(response.data.length > 0) {
+            $scope.storeList = response.data;
+            $scope.storeMsg = null;
+          }
+          else
+            $scope.storeMsg = "Currently not serving in your area !!";
+        }, function (response) {
+          $scope.storeMsg = "Error retrieving data";
+        });
       }
 
       $scope.distanceTo = function(store) {
@@ -49,7 +49,7 @@ angular.module('starter.controllers')
       };
 
       $scope.showAlertGoToCart = function() {
-        var alertPopup = $astionicPopup.alert({
+        var alertPopup = $ionicPopup.alert({
           title: 'Cart Not Empty',
           template: 'Please settle previous cart, before changing store.'
         });
@@ -74,21 +74,21 @@ angular.module('starter.controllers')
       }
 
       $scope.loadMore = function() {
-        alert("yessss")
+        console.log("yessss")
         console.log($scope.storeList)
         if ($scope.storeList.length>0){
           console.log("loadmore");
           $scope.pageNumber = $scope.pageNumber + 1;
           console.log($scope.pageNumber);
           $http.get('http://getmeher.com:3000/shop-groceries/near/' + $scope.areaLng + '/' + $scope.areaLat + '/' + $scope.pageNumber).
-              then(function (response) {
-                $scope.storeList = $scope.storeList.concat(response.data);
-                $scope.$broadcast('scroll.infiniteScrollComplete');
-              }, function (response) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
-              });
-          }
+          then(function (response) {
+            $scope.storeList = $scope.storeList.concat(response.data);
+            $scope.$broadcast('scroll.infiniteScrollComplete');
+          }, function (response) {
+            // called asynchronously if an error occurs
+            // or server returns response with an error status.
+          });
+        }
         else{
           $scope.$broadcast('scroll.infiniteScrollComplete');
         }
