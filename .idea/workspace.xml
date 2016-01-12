@@ -2,302 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="426e2542-a2aa-4227-86ad-b10984bb7a51" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/css/ionicons.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/img/clothes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/img/electronic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/img/fruits.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/img/grocery.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/img/ionic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/img/pharmacy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/img/resturant.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/categoriesCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/contactCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/loginCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/orderCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/otpCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/postOrderCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/shareCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/showCaseCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/controllers/storeListCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/factory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/factory/cart-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/factory/store-data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/helpers/greatCircle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/helpers/slidingTabs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/helpers/slidingTabsDirective.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/services.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/js/services/storeService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-animate/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-animate/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-animate/angular-animate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-animate/angular-animate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-animate/angular-animate.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-animate/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-animate/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/angular-sanitize.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/angular-sanitize.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/angular-sanitize.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-sanitize/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/api/angular-ui-router.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/release/angular-ui-router.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/release/angular-ui-router.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/resolve.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/state.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/stateDirectives.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/stateFilters.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/templateFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/urlMatcherFactory.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/urlRouter.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/view.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/viewDirective.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular-ui-router/src/viewScroll.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/angular-csp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/angular.min.js.gzip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/angular.min.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/angular/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/brown.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/delorean.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-card.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-click-on-affix.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-group-header.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-performance.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/demo-simple.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/demo/mcfly.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/ion-affix.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-affix/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-google-place/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-google-place/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-google-place/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-google-place/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-google-place/ion-google-place.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-google-place/ion-google-place.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-sticky/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-sticky/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-sticky/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-sticky/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-sticky/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-sticky/ion-sticky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ion-sticky/select.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/dist/ionic.filter.bar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-filter-bar/scss/ionic.filter.bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.jshintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/dist/ion-pullup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/.bowerrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/config.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/hooks/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/hooks/after_prepare/010_add_platform_class.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/ionic.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-hdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-ldpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-mdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-xhdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-hdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-ldpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-mdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-xhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-xxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-hdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-ldpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-mdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-xhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-xxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-40.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-40@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-50.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-50@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-60@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-60@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-72@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-76@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-small@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon-small@3x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/icon/icon@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-568h@2x~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-667h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-736h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape-736h.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Landscape~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Portrait@2x~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default-Portrait~ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default@2x~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/ios/splash/Default~iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/resources/splash.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/scss/ionic.app.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/img/ionic.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/controllers.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/ion-pullup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/js/services.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/chat-detail.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tab-account.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tab-chats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tab-dash.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/example/www/templates/tabs.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic-pullup/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/css/ionic.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/css/ionic.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/fonts/ionicons.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic-angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic-angular.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.bundle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.bundle.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/js/ionic.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_action-sheet.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_animations.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_backdrop.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_badge.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_button-bar.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_button.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_checkbox.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_form.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_grid.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_items.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_loaders.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_loading.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_menu.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_modal.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_platform.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_popover.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_popup.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_progress.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_radio.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_range.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_refresher.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_reset.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_scaffolding.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_select.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_slide-box.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_spinner.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_split-pane.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_tabs.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_toggle.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_transitions.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_type.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_util.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionic.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-animation.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-font.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/_ionicons-variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ionic/scss/ionicons/ionicons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/matchMedia.addListener.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/matchMedia.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/body.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/head.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/iframe_body.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/iframe_head.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/matchmedia/test/lib/JSLitmus.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova-mocks.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova-mocks.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/dist/ng-cordova.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngCordova/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/.bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/dist/sticky.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/examples/demo.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/lib/sticky.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/ngSticky/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/plugin/PushCustom.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/plugin/PushNotification.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/plugin/angular-example.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/plugin/angularpushnotification.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/lib/plugin/push.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/partial/location-search.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/categories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/contact.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/menu.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/order.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/otp.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/post-order.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/register.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/share.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/showCase.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/store.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wwwz/templates/storelist.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/icon.ai" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/js/helpers/mixpanel.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Meher.apk" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/resources/icon.png" afterPath="$PROJECT_DIR$/resources/iconz.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Meher-release-unsigned.apk" afterPath="$PROJECT_DIR$/Meher-release-unsigned.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-hdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-hdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-ldpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-ldpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-mdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-mdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xhdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-xhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-xxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-xxxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-50@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-72@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-76@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/meher.iml" afterPath="$PROJECT_DIR$/.idea/meher.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/categoriesCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/categoriesCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/loginCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/loginCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/orderCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/orderCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers/storeListCtrl.js" afterPath="$PROJECT_DIR$/www/js/controllers/storeListCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/post-order.html" afterPath="$PROJECT_DIR$/www/templates/post-order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/store.html" afterPath="$PROJECT_DIR$/www/templates/store.html" />
     </list>
     <ignored path="meher.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -317,12 +62,22 @@
     <favorites_list name="meher" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="storeCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/controllers/storeCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1682243">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="269" column="14" selection-start-line="269" selection-start-column="14" selection-end-line="269" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="store.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/templates/store.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.85333335">
+              <caret line="175" column="51" selection-start-line="175" selection-start-column="51" selection-end-line="175" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -330,20 +85,21 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/www/css/style.css" />
-        <option value="$PROJECT_DIR$/www/templates/browse.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/ContactCtrl.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/contactCtrl.js" />
-        <option value="$PROJECT_DIR$/www/templates/current-order.html" />
         <option value="$PROJECT_DIR$/www/templates/active-order.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/optCtrl.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/storeListCtrl.js" />
         <option value="$PROJECT_DIR$/www/templates/active-orders.html" />
         <option value="$PROJECT_DIR$/www/templates/order-detail.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/orderDetailCtrl.js" />
@@ -351,8 +107,6 @@
         <option value="$PROJECT_DIR$/www/templates/share.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/activeOrders.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/www/templates/storelist.html" />
         <option value="$PROJECT_DIR$/www/lib/ion-sticky/ion-sticky.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/www/templates/order.html" />
@@ -362,31 +116,39 @@
         <option value="$PROJECT_DIR$/wwwz/js/controllers/storeCtrl.js" />
         <option value="$PROJECT_DIR$/www/templates/about.html" />
         <option value="$PROJECT_DIR$/www/templates/contact.html" />
-        <option value="$PROJECT_DIR$/www/templates/store.html" />
         <option value="$PROJECT_DIR$/www/templates/otp.html" />
         <option value="$PROJECT_DIR$/wwwz/js/controllers/otpCtrl.js" />
         <option value="$PROJECT_DIR$/wwwz/js/controllers/loginCtrl.js" />
         <option value="$PROJECT_DIR$/www/templates/pastorder.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/categoriesCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/factory/cart-data.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js" />
-        <option value="$PROJECT_DIR$/www/templates/post-order.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/otpCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/shareCtrl.js" />
-        <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/orderCtrl.js" />
         <option value="$PROJECT_DIR$/www/lib/ion-google-place/ion-google-place.js" />
         <option value="$PROJECT_DIR$/www/templates/menu.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/pastOrder.js" />
         <option value="$PROJECT_DIR$/www/templates/categories.html" />
         <option value="$PROJECT_DIR$/www/templates/login.html" />
-        <option value="$PROJECT_DIR$/www/js/controllers/loginCtrl.js" />
-        <option value="$PROJECT_DIR$/config.xml" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
-        <option value="$PROJECT_DIR$/platforms/android/project.properties" />
         <option value="$PROJECT_DIR$/platforms/android/CordovaLib/project.properties" />
+        <option value="$PROJECT_DIR$/platforms/android/project.properties" />
+        <option value="$PROJECT_DIR$/platforms/android/build.gradle" />
+        <option value="$PROJECT_DIR$/plugins/phonegap-facebook-plugin/plugin.xml" />
+        <option value="$PROJECT_DIR$/platforms/android/src/com/meherapp/meher/MainActivity.java" />
+        <option value="$PROJECT_DIR$/platforms/android/src/org/apache/cordova/facebook/ConnectPlugin.java" />
+        <option value="$PROJECT_DIR$/platforms/android/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/www/js/helpers/mixpanel.js" />
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/loginCtrl.js" />
+        <option value="$PROJECT_DIR$/www/templates/post-order.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers/orderCtrl.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/categoriesCtrl.js" />
+        <option value="$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/js/controllers/storeListCtrl.js" />
+        <option value="$PROJECT_DIR$/www/templates/storelist.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers/storeCtrl.js" />
+        <option value="$PROJECT_DIR$/www/templates/store.html" />
       </list>
     </option>
   </component>
@@ -403,7 +165,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="732" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -430,7 +192,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -445,7 +206,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MeherAppConsumer" />
+              <option name="myItemId" value="MeherAppConsumer FB only" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -455,7 +216,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MeherAppConsumer" />
+              <option name="myItemId" value="MeherAppConsumer FB only" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -469,7 +230,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MeherAppConsumer" />
+              <option name="myItemId" value="MeherAppConsumer FB only" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MeherAppConsumer FB only" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -481,13 +260,146 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MeherAppConsumer FB only" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MeherAppConsumer FB only" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MeherAppConsumer FB only" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MeherAppConsumer FB only" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MeherAppConsumer FB only" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outputs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="meher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MeherAppConsumer FB only" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platforms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outputs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MeherAppRetailer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MeherAppRetailer/www/js" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="editorconfig.notification" value="Applied .editorconfig settings" />
@@ -505,9 +417,9 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/www/js/controllers" />
       <recent name="$PROJECT_DIR$/www/templates" />
-      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/www/js/factory" />
     </key>
   </component>
@@ -576,29 +488,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="732" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22478157" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29983792" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3396779" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4563863" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44509518" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34076434" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -619,6 +531,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -661,20 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/storelist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69164264">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/categoriesCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="40" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/order.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3560831">
@@ -689,46 +603,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/store.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="97" column="26" selection-start-line="97" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/ios/Meher.xcodeproj/project.pbxproj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/shareCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="209" selection-start-line="17" selection-start-column="209" selection-end-line="17" selection-end-column="209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.097561">
-          <caret line="29" column="38" selection-start-line="29" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/storeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.16129">
-          <caret line="292" column="55" selection-start-line="292" selection-start-column="55" selection-end-line="292" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/orderCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76036865">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,23 +617,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/icon.png">
+    <entry file="file://$PROJECT_DIR$/resources/iconz.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/lib/ion-google-place/ion-google-place.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.7777777">
-          <caret line="271" column="48" selection-start-line="271" selection-start-column="39" selection-end-line="271" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/storeListCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/about.html">
@@ -769,13 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.20833333">
           <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/categories.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -793,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/loginCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0740743">
-          <caret line="128" column="14" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/menu.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6770834">
@@ -812,74 +662,31 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/post-order.html">
+    <entry file="file://$PROJECT_DIR$/platforms/android/CordovaLib/project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5208333">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6122449">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js">
+    <entry file="file://$PROJECT_DIR$/platforms/android/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.6634617">
-          <caret line="97" column="56" selection-start-line="97" selection-start-column="56" selection-end-line="97" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.6142322">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
+    <entry file="file://$PROJECT_DIR$/platforms/android/project.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.137931">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="0.670068">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/com.tapstream.phonegap/plugin.xml">
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/values/facebookconnect.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16574585">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/com.tapstream.phonegap/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35654595">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046728972">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/cordova/defaults.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.61616164">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/CordovaLib/cordova.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.15151516">
+          <caret line="3" column="36" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -890,24 +697,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/project.properties">
+    <entry file="file://$PROJECT_DIR$/platforms/android/src/com/meherapp/meher/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3333335">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.5794392">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/platforms/android/CordovaLib/project.properties">
+    <entry file="file://$PROJECT_DIR$/platforms/android/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6122449">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        <state vertical-scroll-proportion="1.7928287">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/src/org/apache/cordova/facebook/ConnectPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="78" selection-start-line="74" selection-start-column="78" selection-end-line="74" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/phonegap-facebook-plugin/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3904383">
+          <caret line="40" column="71" selection-start-line="40" selection-start-column="71" selection-end-line="40" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/drawable-xxxhdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/drawable-xxhdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/platforms/android/res/drawable-xhdpi/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/android/splash/drawable-land-xhdpi-screen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/android/splash/drawable-port-xxhdpi-screen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/android/icon/drawable-xxxhdpi-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/helpers/mixpanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68363637">
+          <caret line="99" column="362" selection-start-line="99" selection-start-column="362" selection-end-line="99" selection-end-column="362" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.058035713">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5185184">
+          <caret line="217" column="18" selection-start-line="217" selection-start-column="18" selection-end-line="217" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/loginCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.87903225">
+          <caret line="80" column="30" selection-start-line="80" selection-start-column="30" selection-end-line="80" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/post-order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="48" column="121" selection-start-line="48" selection-start-column="121" selection-end-line="48" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1682243">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="100" column="32" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/orderCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20775624">
+          <caret line="5" column="121" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/categoriesCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19329897">
+          <caret line="5" column="79" selection-start-line="5" selection-start-column="66" selection-end-line="5" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/postOrderCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.083102494">
+          <caret line="2" column="122" selection-start-line="2" selection-start-column="122" selection-end-line="2" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.054545455">
+          <caret line="1" column="46" selection-start-line="1" selection-start-column="46" selection-end-line="1" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ion-sticky/ion-sticky.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ion-google-place/ion-google-place.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1724138">
+          <caret line="105" column="31" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/storelist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5421687">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/storeListCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.5287356">
+          <caret line="86" column="38" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/storeCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="269" column="14" selection-start-line="269" selection-start-column="14" selection-end-line="269" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/store.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.85333335">
+          <caret line="175" column="51" selection-start-line="175" selection-start-column="51" selection-end-line="175" selection-end-column="51" />
           <folding />
         </state>
       </provider>

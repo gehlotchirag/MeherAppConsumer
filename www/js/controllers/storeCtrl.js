@@ -9,7 +9,8 @@ angular.module('starter.controllers')
       $scope.customProduct = {};
       $scope.storeCategory = window.category;
       $scope.productCatalog = window.category.productCategory;
-
+var loadInstance = true;
+var getmore = true;
       var temp;
 
 
@@ -220,26 +221,55 @@ angular.module('starter.controllers')
         }
       };
 
-
       $scope.scrollCheck = function(index) {
-        if ($ionicSlideBoxDelegate.selected() == index && $scope.productCatalog[$ionicSlideBoxDelegate.selected()].loadMore == true){
-          return true;
+        //alert($ionicSlideBoxDelegate.selected())
+        if (loadInstance) {
+//        if (loadInstance || getmore) {
+          return true
         }
-        else{
-          return false;
-        }
+        else
+        return false
+        //if ($ionicSlideBoxDelegate.selected() == index ){
+        //  alert("here"+index);
+        //  return true
+        //}
+        //else {
+        //  return false
+        //}
       };
+
+
+      //$scope.scrollCheck = function(index) {
+      //  if ($ionicSlideBoxDelegate.selected() == index && $scope.productCatalog[$ionicSlideBoxDelegate.selected()].loadMore == true){
+      //    return true;
+      //  }
+      //  else{
+      //    return false;
+      //  }
+      //};
+
       var searchOn = false;
       var once = true;
+
       $scope.loadMoreProducts = function() {
 
+        alert("loading more select" +$ionicSlideBoxDelegate.selected());
+        //alert($scope.productCatalog + $ionicSlideBoxDelegate.selected());
+        //alert($ionicSlideBoxDelegate.selected())
+        //alert($ionicSlideBoxDelegate.selected())
+        // alert($scope.productCatalog[$ionicSlideBoxDelegate.selected()])
         if($scope.productCatalog[$ionicSlideBoxDelegate.selected()])
           if(once == true && $scope.productCatalog[$ionicSlideBoxDelegate.selected()].loadMore == true) {
             once=false;
             var index = $ionicSlideBoxDelegate.selected();
             var productCategory = $scope.productCatalog[index].link;
             var pageNumber = $scope.productCatalog[index].pageNumber
-            $scope.getProducts(productCategory, pageNumber).then(function (response) {
+            $http.get('http://getmeher.com:3000/'+$scope.productCatalog[0].link+'/'+productCategory+'/'+pageNumber).
+            then(function (response) {
+            //$scope.getProducts(productCategory, pageNumber).then(function (response) {
+              $scope.$broadcast('scroll.infiniteScrollComplete');
+//              loadInstance = false;
+
               if (response.data.length >0 ){
                 angular.forEach(response.data, function (value, key) {
                   value.ordernow = false;
@@ -251,38 +281,36 @@ angular.module('starter.controllers')
               else{
                 $scope.productCatalog[index].loadMore = false;
               }
-              $scope.$broadcast('scroll.infiniteScrollComplete');
               once = true;
             })
           }
       };
 
       $scope.$on('$stateChangeSuccess', function() {
+        alert('original')
         $scope.loadMoreProducts();
       });
 
 
       $scope.getProducts = function(productCategory,pageNumber) {
-        return $http.get('http://getmeher.com:3000/'+$scope.productCatalog[0].link+'/'+productCategory+'/'+pageNumber)
+        alert(pageNumber)
+         return $http.get('http://getmeher.com:3000/'+$scope.productCatalog[0].link+'/'+productCategory+'/'+pageNumber)
       };
       var filterBarInstance;
       $scope.showFilterBar = function () {
         filterBarInstance = $ionicFilterBar.show({
           items: $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products,
-
           cancel: function () {
             console.log(temp);
             $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products =temp;
           },
-
           update: function (filteredItems, filterText) {
             searchOn = true;
-            console.log("%%%%%%%%%")
+            console.log("%%%%%%%%%");
             console.log($scope.productCatalog[$ionicSlideBoxDelegate.selected()].products)
             if(temp == null)
             {
               temp = $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products;
-
             }
             $scope.productCatalog[$ionicSlideBoxDelegate.selected()].products = "";
             if (filterText) {
@@ -296,10 +324,7 @@ angular.module('starter.controllers')
                     }, function errorCallback(response) {
                     });
               }
-
             }
-
-
           }
         });
       };

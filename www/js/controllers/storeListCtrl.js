@@ -49,7 +49,7 @@ angular.module('starter.controllers')
       };
 
       $scope.showAlertGoToCart = function() {
-        var alertPopup = $ionicPopup.alert({
+        var alertPopup = $astionicPopup.alert({
           title: 'Cart Not Empty',
           template: 'Please settle previous cart, before changing store.'
         });
@@ -74,7 +74,7 @@ angular.module('starter.controllers')
       }
 
       $scope.loadMore = function() {
-        console.log("yessss")
+        alert("yessss")
         console.log($scope.storeList)
         if ($scope.storeList.length>0){
           console.log("loadmore");

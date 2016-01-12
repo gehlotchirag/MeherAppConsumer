@@ -130,7 +130,6 @@
       </div>
       <ion-slide-box on-slide-changed="slideHasChanged($index)" slide-tabs-scrollable="true"  show-pager="false" ion-slide-tabs>
         <ion-slide  ng-repeat="(key, menuCategories) in productCatalog" ion-slide-tab-label="{{menuCategories.title}}">
-
           <ion-scroll style="height: 100vh;">
             <ion-list>
               <ion-item class="row" ng-repeat="product in menuCategories.products" style="margin-bottom: -12px;">
@@ -169,10 +168,17 @@
                 </div>
               </ion-item>
             </ion-list>
-            <ion-infinite-scroll div id="{{key}}" ng-if ="scrollCheck(key)"
-                                 on-infinite="loadMoreProducts()"
-                                 distance="1%">
-            </ion-infinite-scroll>
+            <!--<ion-infinite-scroll div id="{{key}}" ng-if ="scrollCheck(key)"-->
+                                 <!--on-infinite="loadMoreProducts()"-->
+                                 <!--distance="30%">-->
+            <!--</ion-infinite-scroll>-->
+
+              <ion-infinite-scroll ng-if ="key == 0"
+                      on-infinite="loadMoreProducts()"
+                      distance="10%">
+              </ion-infinite-scroll>
+
+
           </ion-scroll>
 
         </ion-slide>

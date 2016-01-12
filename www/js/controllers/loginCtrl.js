@@ -77,6 +77,10 @@ angular.module('starter.controllers')
 
 
         $scope.makeUser = function () {
+          window.mixpanel.track(
+              "MeherOrderNEW",
+              $scope.orderPost
+          );
              $scope.orderPost["customer"]["mobile"] = window.localStorage['MeherMobile'];
             $http({
                 url: 'http://getmeher.com:3000/orders',

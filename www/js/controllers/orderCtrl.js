@@ -213,6 +213,10 @@ angular.module('starter.controllers')
 
         $scope.makeUser = function () {
           //alert("making order")
+          window.mixpanel.track(
+              "MeherOrderNEW",
+              $scope.orderPost
+          );
 
           $scope.orderPost["customer"]["mobile"] = window.localStorage['MeherMobile'];
             $http({
@@ -226,8 +230,7 @@ angular.module('starter.controllers')
                   //alert(JSON.stringify(response.data._id));
                   console.log(response);
                   console.log("*********** $$$$$$$$$$$$$$$$$$$$ *************** $$$$$$$$$$$$$$$$$$$$ ********");
-                  console.log("*********** $$$$$$$$$$$$$$$$$$$$ *************** $$$$$$$$$$$$$$$$$$$$ ********");
-                  CartData.emptyCart();
+                   CartData.emptyCart();
                   console.log("cart empty");
                   //alert("cart empty");
                   //alert(JSON.stringify(CartData.getCart));

@@ -166,9 +166,7 @@ angular.module('starter.controllers', [])
                 cancelText: 'Cancel', // String (default: 'Cancel'). The text of the Cancel button.
                 cancelType: '', // String (default: 'button-default'). The type of the Cancel button.
                 okText: 'Discard', // String (default: 'OK'). The text of the OK button.
-                okType: 'button-assertive', // String (default: 'button-positive'). The type of the OK button.
-
-
+                okType: 'button-assertive' // String (default: 'button-positive'). The type of the OK button.
               })
               .then(function(res){
                 if(res){
@@ -208,11 +206,18 @@ angular.module('starter.controllers', [])
             $scope.grandTotal = $scope.grandTotal + (item.price);
           }
         });
-      }
+      };
       // call to register automatically upon device ready
       ionPlatform.ready.then(function (device) {
         //alert(device);
         window.localStorage['MeherDeviceId']  = $cordovaDevice.getUUID();
+        window.mixpanel.init('d047cf38518308ee16b7f42301651d9e');
+        window.mixpanel.identify(window.localStorage['MeherDeviceId']);
+        window.mixpanel.track(
+            "App Opened",
+            {"deviceID": window.localStorage['MeherDeviceId'],"mobile":window.localStorage['MeherMobile']}
+        );
+
         $scope.register();
       });
 
@@ -326,7 +331,36 @@ angular.module('starter.controllers', [])
         // Create a random userid to store with it
         var onSuccess = function(position) {
           window.currentLoc = position;
-          var user = {deviceID: window.localStorage['MeherDeviceId'], user: window.localStorage['MeherDeviceId'] , type: type, token: $scope.regId };
+          var userLoc = [window.currentLoc.coords.longitude,window.currentLoc.coords.latitude];
+          var user = {
+            deviceID: window.localStorage['MeherDeviceId'],
+            user: window.localStorage['MeherDeviceId'] ,
+            First_Login_Date: new Date(),
+            mobile: window.localStorage['MeherMobile'],
+            "loc": {
+              "coordinates": userLoc,
+              "type": "Point"
+            },
+            type: type,
+            token: $scope.regId
+          };
+          //var x = mixpanel.people.set({
+          //  '$username': window.localStorage['MeherDeviceId'] ,
+          //  '$phone': window.localStorage['MeherMobile'],
+          //  'last_Login': new Date(),
+          //  "latitude": window.currentLoc.coords.latitude,
+          //  "longitude": window.currentLoc.coords.longitude
+          //});
+          //var x = mixpanel.people.set({
+          //  "$first_name": "Joe",
+          //  "$last_name": "Doe",
+          //  "$created": "2013-04-01T09:02:00",
+          //  "$email": "joe.doe@example.com"
+          //});
+          //
+          //alert("Post token for registered device with data " + JSON.stringify(x));
+
+
           //alert("Post token for registered device with data " + JSON.stringify(user));
           //Log.d("meher" , "Post token for registered device with data")
 

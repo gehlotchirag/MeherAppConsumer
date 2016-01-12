@@ -11,7 +11,7 @@ var MeherMobile = null;
 var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova','greatCircles','ion-google-place','ti-segmented-control','jett.ionic.filter.bar','ionic-pullup'])
 
 
-    .run(function($ionicPlatform,$state,$cordovaSQLite) {
+    .run(function($ionicPlatform,$state,$cordovaSQLite,$cordovaFacebook) {
       $ionicPlatform.ready(function() {
         // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
         // for form inputs)
@@ -23,9 +23,19 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
           StatusBar.styleDefault();
         }
 
-        window.tapstream.create('meher', 'bPpIwntUQbSNX77bh402YA', {
-          idfa: '<IDFA goes here>'
-        });
+        facebookConnectPlugin.logEvent('fb_mobile_activate_app');
+        document.addEventListener("deviceready", function(){
+          var args = [];
+          var devKey = "3M3BgmLyTSQZ2qegSTJ6Xj";   // your AppsFlyer devKey
+          args.push(devKey);
+          //var userAgent = window.navigator.userAgent.toLowerCase();
+          //if (/iphone|ipad|ipod/.test( userAgent )) {
+          //  var appId = "123456789";            // your ios app id in app store
+          //  args.push(appId);
+          //}
+          //alert(window.plugins.appsFlyer)
+          window.plugins.appsFlyer.initSdk(args);
+        }, false);
 
         document.addEventListener("resume", function() {
           if($state.current.name == "app.storelist" || $state.current.name == "app.postorder" || $state.current.name == "app.postorder")

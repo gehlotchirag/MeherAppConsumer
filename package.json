@@ -16,15 +16,15 @@
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
-    "org.apache.cordova.dialogs",
-    "org.apache.cordova.splashscreen",
-    "org.apache.cordova.device",
-    "org.apache.cordova.media",
-    "org.apache.cordova.file",
-    "com.ionic.keyboard",
-    "cordova-plugin-geolocation",
-    "org.apache.cordova.vibration",
     "cordova.plugins.diagnostic",
+    "cordova-plugin-device",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-media",
+    "cordova-plugin-file",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-geolocation",
+    "cordova-plugin-vibration",
+    "com.ionic.keyboard",
     {
       "locator": "https://github.com/cordova-sms/cordova-sms-plugin.git",
       "id": "com.cordova.plugins.sms"
@@ -44,14 +44,28 @@
     {
       "locator": "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin.git",
       "id": "cordova-plugin-x-socialsharing"
-    }
+    },
+    {
+      "id": "phonegap-facebook-plugin",
+      "locator": "https://github.com/phonegap/phonegap-facebook-plugin.git",
+      "variables": {
+        "APP_ID": "1507040759626576",
+        "APP_NAME": "Meher Android"
+      }
+    },
+    "cordova-plugin-mixpanel"
   ],
   "cordovaPlatforms": [
-    "android",
     {
       "platform": "ios",
       "version": "",
       "locator": "ios"
+    },
+    "android",
+    {
+      "platform": "android",
+      "version": "",
+      "locator": "android"
     }
   ]
 }

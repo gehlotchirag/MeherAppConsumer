@@ -1,6 +1,6 @@
 angular.module('starter.controllers')
 
-    .controller('postOrderCtrl', function($scope, $http, $stateParams,CartData,StoreData, $ionicPopup) {
+    .controller('postOrderCtrl', function($scope, $http, $stateParams,CartData,StoreData, $ionicPopup,$state,$ionicHistory) {
         //$scope.order= JSON.parse(window.localStorage['orderPost'] || '{}');
         $scope.orderId=$stateParams.orderId;
         $scope.order={};
@@ -85,6 +85,41 @@ angular.module('starter.controllers')
 
 
 
+      // CANCEL ORDER HERE-->
+
+      $scope.attemptCancel = function(){
+        if($scope.timeDiff < 30){
+          $scope.cancelOrder();
+        }
+        else
+          alert("You cannot cancel your order now!");
+      }
+
+      $scope.cancelOrder = function(){
+        $ionicHistory.nextViewOptions({
+          disableBack: true
+        });
+
+        $http({
+          method: 'PUT',
+          url: 'http://getmeher.com:3000/orders/'+ $scope.orderId+'/cancelled',
+          data: $scope.order
+        }).then(function successCallback(response) {
+          console.log(response);
+          alert("Your order was cancelled successfully!");
+          $state.go('app.categories');
+
+          //$location.url('/app/categories');
+          // this callback will be called asynchronously
+          // when the response is available
+        }, function errorCallback(response) {
+          console.log(response);
+          // called asynchronously if an error occurs
+          // or server returns response with an error status.
+        });
+      };
+
+//      CANCEL ORDER END -X-
 
 
         $scope.sendFeedback = function() {

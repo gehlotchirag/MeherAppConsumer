@@ -3,7 +3,9 @@
  */
 angular.module('starter.controllers')
 
-    .controller('CategoriesCtrl', function($scope,$location,$http) {
+    .controller('CategoriesCtrl', function($scope,$location,$http,$ionicHistory) {
+      $ionicHistory.clearHistory();
+
       $scope.categorylists = [];
       $scope.categoryTemp = [];
       $scope.categoryTemp = [
