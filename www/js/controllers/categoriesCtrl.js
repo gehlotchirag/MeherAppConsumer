@@ -3,7 +3,7 @@
  */
 angular.module('starter.controllers')
 
-    .controller('CategoriesCtrl', function($scope,$location,$http,$ionicHistory) {
+    .controller('CategoriesCtrl', function($scope,$location,$cordovaGeolocation,$http,$ionicHistory) {
       $ionicHistory.clearHistory();
 
       $scope.categorylists = [];
@@ -171,29 +171,48 @@ angular.module('starter.controllers')
       $scope.$watchCollection('categoryTemp', function(newValue, oldValue) {
         if (newValue !== oldValue)
         {
-          console.log("watch triggered !!");
           angular.copy($scope.categoryTemp, $scope.categorylists);
+
         }
       });
+      var posOptions = {timeout: 10000, enableHighAccuracy: false};
 
-      $http({
-        method: 'GET',
-        url: 'http://getmeher.com:3000/categorylists'
-      }).then(function successCallback(response) {
-        console.log(response)
-        if (response.data.length> 0)
-          $scope.categoryTemp = response.data;
-        else
-          alert("unable to connect");
-      }, function errorCallback(response) {
-        console.log(response)
-        alert("unable to connect");
-      });
+      $cordovaGeolocation
+          .getCurrentPosition(posOptions)
+          .then(function (position) {
+            var lat  = position.coords.latitude;
+            var long = position.coords.longitude;
+            $http({
+              method: 'GET',
+              url: 'http://getmeher.com:3000/initapp/'+position.coords.longitude+'/'+position.coords.latitude
+            }).then(function successCallback(response) {
+              if (response.data.length > 0)
+                $scope.categoryTemp = response.data.categories;
+              if (response.data.promotions){
+
+                alert("promotions")
+              }
+              else{
+                alert("unable to connect");
+              }
+
+            }, function errorCallback(response) {
+              console.log(response)
+              alert("unable to connect");
+            });
+
+          }, function(err) {
+            // error
+          });
 
 
       $scope.goToStoreList = function(category) {
         window.category = category;
+        if (category.type == "offers")
+        $location.url("/app/offers");
+        else
         $location.url("/app/categories/"+category.id);
+
       };
 
     })

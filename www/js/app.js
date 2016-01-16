@@ -152,12 +152,21 @@ var app = angular.module('starter', ['ionic', 'starter.controllers', 'starter.se
               }
             }
           })
+
           .state('app.login', {
             url: '/login',
             views: {
               'menuContent': {
                 templateUrl: 'templates/login.html',
                 controller: 'loginCtrl'
+              }
+            }
+          }).state('app.offers', {
+            url: '/offers',
+            views: {
+              'menuContent': {
+                templateUrl: 'templates/offers.html',
+                controller: 'offersCtrl'
               }
             }
           })

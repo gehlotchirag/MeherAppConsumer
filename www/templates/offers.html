@@ -1,58 +1,58 @@
-<ion-view view-title="{{storeId}}">
+<ion-view view-title="New Offers">
     <ion-nav-buttons side="secondary">
-        <button class="button icon-left ion-ios-telephone button-balanced" ng-click="CallTel({{StoreSelected.mobile}})">Call</button>
+        <!--<button class="button icon-left ion-ios-telephone button-balanced" ng-click="CallTel({{StoreSelected.mobile}})">Call</button>-->
     </ion-nav-buttons>
 
     <ion-content>
-        <div id="menu-view" ng-if="storeCategory.type=='general'">
-            <div class="row bar bar-header bar-stable item-input-inset" ng-show="!showCustomType" style="height: 100%;">
-                <div class="col">
-                    <button class="button icon-left ion-compose button-positive" ng-click="showCustomType = true">Type</button>
-                </div>
-                <div class="col text-center">
-                    <i class="ion-android-bicycle" style="font-size: 15px;"></i>
-                    {{StoreDistance}} KM Away
-                </div>
-                <div class="col text-right" >
-    <span >
-    <i class="ion-clock" style="font-size:15px;"></i>
-    30 Mins Delivery
-    </span>
-                </div>
+        <div id="menu-view" ng-if="storeCategory.type=='offers'">
+            <!--<div class="row bar bar-header bar-stable item-input-inset" ng-show="!showCustomType" style="height: 100%;">-->
+                <!--<div class="col">-->
+                    <!--<button class="button icon-left ion-compose button-positive" ng-click="showCustomType = true">Type</button>-->
+                <!--</div>-->
+                <!--<div class="col text-center">-->
+                    <!--<i class="ion-android-bicycle" style="font-size: 15px;"></i>-->
+                    <!--{{StoreDistance}} KM Away-->
+                <!--</div>-->
+                <!--<div class="col text-right" >-->
+    <!--<span >-->
+    <!--<i class="ion-clock" style="font-size:15px;"></i>-->
+    <!--30 Mins Delivery-->
+    <!--</span>-->
+                <!--</div>-->
 
-                <div class="col text-right">
-                    <button class="button button-icon icon ion-ios-search" ng-click="showFilterBar()">
-                    </button>
-                </div>
-            </div>
-            <div class="filter-bar-wrapper filter-bar-positive " ng-show="showCustomType">
-                <div class="row bar bar-header bar-stable item-input-inset">
-                    <!--<div class="col col-10">-->
+                <!--<div class="col text-right">-->
+                    <!--<button class="button button-icon icon ion-ios-search" ng-click="showFilterBar()">-->
+                    <!--</button>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="filter-bar-wrapper filter-bar-positive " ng-show="showCustomType">-->
+                <!--<div class="row bar bar-header bar-stable item-input-inset">-->
+                    <!--&lt;!&ndash;<div class="col col-10">&ndash;&gt;-->
 
-                    <!--<button class="button button-icon icon positive ion-close-circled" ng-click="showCustomType = false"></button>-->
+                    <!--&lt;!&ndash;<button class="button button-icon icon positive ion-close-circled" ng-click="showCustomType = false"></button>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--<div class="col col-50">-->
+                        <!--<label class="item-input-wrapper" style="background: white;"><i class="icon ion-compose placeholder-icon"></i><input type="search" class="filter-bar-search ng-pristine ng-valid ng-touched" ng-model="customProduct.name" placeholder="Item Name"><button class="filter-bar-clear button button-icon icon filter-bar-element-hide" ng-class="getClearButtonClass()"></button></label>-->
                     <!--</div>-->
-                    <div class="col col-50">
-                        <label class="item-input-wrapper" style="background: white;"><i class="icon ion-compose placeholder-icon"></i><input type="search" class="filter-bar-search ng-pristine ng-valid ng-touched" ng-model="customProduct.name" placeholder="Item Name"><button class="filter-bar-clear button button-icon icon filter-bar-element-hide" ng-class="getClearButtonClass()"></button></label>
-                    </div>
-                    <div class="col col-30">
-                        <label class="item-input-wrapper" style="background: white;"><i class="icon ion-funnel placeholder-icon"></i><input type="search" class="filter-bar-search ng-pristine ng-valid ng-touched" ng-model="customProduct.customQuantity" placeholder="Qty"><button class="filter-bar-clear button button-icon icon filter-bar-element-hide" ng-class="getClearButtonClass()"></button></label>
-                    </div>
-                    <div class="col col-10">
-                        <button class="filter-bar-cancel button button-clear" ng-click="addcustomProduct(customProduct)">Add&nbsp;</button>
-                    </div>
-                    <div class="col col-10">
-                        <button id="close-btn" style="font-size: 6px !important" class="button button-icon icon ion-close-round" ng-click="showCustomType = false"></button>
-                    </div>
+                    <!--<div class="col col-30">-->
+                        <!--<label class="item-input-wrapper" style="background: white;"><i class="icon ion-funnel placeholder-icon"></i><input type="search" class="filter-bar-search ng-pristine ng-valid ng-touched" ng-model="customProduct.customQuantity" placeholder="Qty"><button class="filter-bar-clear button button-icon icon filter-bar-element-hide" ng-class="getClearButtonClass()"></button></label>-->
+                    <!--</div>-->
+                    <!--<div class="col col-10">-->
+                        <!--<button class="filter-bar-cancel button button-clear" ng-click="addcustomProduct(customProduct)">Add&nbsp;</button>-->
+                    <!--</div>-->
+                    <!--<div class="col col-10">-->
+                        <!--<button id="close-btn" style="font-size: 6px !important" class="button button-icon icon ion-close-round" ng-click="showCustomType = false"></button>-->
+                    <!--</div>-->
 
-                </div>
+                <!--</div>-->
 
-            </div>
+            <!--</div>-->
             <ion-slide-box on-slide-changed="slideHasChanged($index)" slide-tabs-scrollable="true" show-pager="false"
                            ion-slide-tabs>
                 <ion-slide ng-repeat="(key, menuCategories) in productCatalog"
                            ion-slide-tab-label="{{menuCategories.title}}">
                     <ion-scroll style="height: 450px;">
-                    <!--<ion-scroll style="height: 50%;">-->
+                        <!--<ion-scroll style="height: 50%;">-->
                         <ion-list>
                             <ion-item class="row" ng-repeat="product in menuCategories.products"
                                       style="margin-bottom: -12px;">
